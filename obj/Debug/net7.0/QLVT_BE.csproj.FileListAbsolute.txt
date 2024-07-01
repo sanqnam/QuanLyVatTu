@@ -1,0 +1,420 @@
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\appsettings.Development.json
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\appsettings.json
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.exe
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.deps.json
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.runtimeconfig.json
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.pdb
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Humanizer.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.OpenApi.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Mono.TextTemplating.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.CodeDom.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.AssemblyReference.cache
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.GeneratedMSBuildEditorConfig.editorconfig
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.AssemblyInfoInputs.cache
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.AssemblyInfo.cs
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.CoreCompileInputs.cache
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.MvcApplicationPartsAssemblyInfo.cs
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.MvcApplicationPartsAssemblyInfo.cache
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.QLVT_BE.Microsoft.AspNetCore.StaticWebAssets.props
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.build.QLVT_BE.props
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.QLVT_BE.props
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.QLVT_BE.props
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.pack.json
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.build.json
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.development.json
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\scopedcss\bundle\QLVT_BE.styles.css
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.CopyComplete
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\refint\QLVT_BE.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.pdb
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.genruntimeconfig.cache
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\ref\QLVT_BE.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Azure.Core.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Azure.Identity.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Drawing.Common.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Memory.Data.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Runtime.Caching.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Security.Permissions.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Windows.Extensions.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\MessagePack.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\MessagePack.Annotations.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Common.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Protocols.MessagePack.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.Features.dll
+F:\5. Cty NDTD\Project\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\appsettings.Development.json
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\appsettings.json
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.exe
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.deps.json
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.runtimeconfig.json
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.pdb
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Azure.Core.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Azure.Identity.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Humanizer.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\MessagePack.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\MessagePack.Annotations.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Common.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Protocols.MessagePack.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.Features.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.OpenApi.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.CodeDom.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Memory.Data.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.AssemblyReference.cache
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.GeneratedMSBuildEditorConfig.editorconfig
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.AssemblyInfoInputs.cache
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.AssemblyInfo.cs
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.CoreCompileInputs.cache
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.MvcApplicationPartsAssemblyInfo.cs
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.MvcApplicationPartsAssemblyInfo.cache
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.build.json
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.development.json
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.QLVT_BE.Microsoft.AspNetCore.StaticWebAssets.props
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.build.QLVT_BE.props
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.QLVT_BE.props
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.QLVT_BE.props
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.pack.json
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\scopedcss\bundle\QLVT_BE.styles.css
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.Up2Date
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\refint\QLVT_BE.dll
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.pdb
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.genruntimeconfig.cache
+E:\TotNghiep\BackEnd\QLVT_BE\QLVT_BE\obj\Debug\net7.0\ref\QLVT_BE.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\appsettings.Development.json
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\appsettings.json
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.exe
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.deps.json
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.runtimeconfig.json
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.pdb
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Azure.Core.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Azure.Identity.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Humanizer.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\MessagePack.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\MessagePack.Annotations.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Common.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Protocols.MessagePack.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.Features.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.OpenApi.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Mono.TextTemplating.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.CodeDom.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Drawing.Common.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Memory.Data.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Runtime.Caching.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Security.Permissions.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Windows.Extensions.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.AssemblyReference.cache
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.GeneratedMSBuildEditorConfig.editorconfig
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.AssemblyInfoInputs.cache
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.AssemblyInfo.cs
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.CoreCompileInputs.cache
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.MvcApplicationPartsAssemblyInfo.cs
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.MvcApplicationPartsAssemblyInfo.cache
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.QLVT_BE.Microsoft.AspNetCore.StaticWebAssets.props
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.build.QLVT_BE.props
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.QLVT_BE.props
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.QLVT_BE.props
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.pack.json
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.build.json
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.development.json
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\scopedcss\bundle\QLVT_BE.styles.css
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.CopyComplete
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\refint\QLVT_BE.dll
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.pdb
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.genruntimeconfig.cache
+F:\10. TOTNghiep\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\ref\QLVT_BE.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\appsettings.Development.json
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\appsettings.json
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.exe
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.deps.json
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.runtimeconfig.json
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.pdb
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Azure.Core.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Azure.Identity.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Humanizer.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\MessagePack.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\MessagePack.Annotations.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Common.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Protocols.MessagePack.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.Features.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.OpenApi.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Mono.TextTemplating.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.CodeDom.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Drawing.Common.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Memory.Data.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Runtime.Caching.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Security.Permissions.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Windows.Extensions.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.AssemblyReference.cache
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.GeneratedMSBuildEditorConfig.editorconfig
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.AssemblyInfoInputs.cache
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.AssemblyInfo.cs
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.CoreCompileInputs.cache
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.MvcApplicationPartsAssemblyInfo.cs
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.MvcApplicationPartsAssemblyInfo.cache
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.QLVT_BE.Microsoft.AspNetCore.StaticWebAssets.props
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.build.QLVT_BE.props
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.QLVT_BE.props
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.QLVT_BE.props
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.pack.json
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.build.json
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.development.json
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\scopedcss\bundle\QLVT_BE.styles.css
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.CopyComplete
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\refint\QLVT_BE.dll
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.pdb
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.genruntimeconfig.cache
+F:\Hello\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\ref\QLVT_BE.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\appsettings.Development.json
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\appsettings.json
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.exe
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.deps.json
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.runtimeconfig.json
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\QLVT_BE.pdb
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Azure.Core.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Azure.Identity.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Humanizer.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\MessagePack.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\MessagePack.Annotations.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Common.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Protocols.MessagePack.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.Features.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.OpenApi.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Mono.TextTemplating.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.CodeDom.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Drawing.Common.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Memory.Data.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Runtime.Caching.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Security.Permissions.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\System.Windows.Extensions.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.AssemblyReference.cache
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.GeneratedMSBuildEditorConfig.editorconfig
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.AssemblyInfoInputs.cache
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.AssemblyInfo.cs
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.CoreCompileInputs.cache
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.MvcApplicationPartsAssemblyInfo.cs
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.MvcApplicationPartsAssemblyInfo.cache
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.QLVT_BE.Microsoft.AspNetCore.StaticWebAssets.props
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.build.QLVT_BE.props
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.QLVT_BE.props
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.QLVT_BE.props
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.pack.json
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.build.json
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\staticwebassets.development.json
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\scopedcss\bundle\QLVT_BE.styles.css
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.csproj.CopyComplete
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\refint\QLVT_BE.dll
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.pdb
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\QLVT_BE.genruntimeconfig.cache
+F:\01.Tốt Nghiệp\02.Back-end\QLVT_BE\QLVT_BE\obj\Debug\net7.0\ref\QLVT_BE.dll

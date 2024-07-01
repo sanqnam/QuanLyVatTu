@@ -1,0 +1,1521 @@
+[
+  {
+    "ContainingType": "QLVT_BE.Controllers.ChatBoxController",
+    "Method": "SendMessage",
+    "RelativePath": "api/ChatBox",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "QLVT_BE.HubSignalR.ChatMessage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.ChucVuController",
+    "Method": "GetAll",
+    "RelativePath": "api/ChucVu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.ChucVuController",
+    "Method": "AddchucVu",
+    "RelativePath": "api/ChucVu/AddChucVu",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chucVuMD",
+        "Type": "QLVT_BE.ViewModels.ChucVuMD",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.ChucVuController",
+    "Method": "GetById",
+    "RelativePath": "api/ChucVu/IdPhongBan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.ChucVuController",
+    "Method": "search",
+    "RelativePath": "api/ChucVu/search/{search}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.ChucVuController",
+    "Method": "Update",
+    "RelativePath": "api/ChucVu/Update/{idChucVu}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idChucVu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "chucVuMD",
+        "Type": "QLVT_BE.ViewModels.ChucVuMD",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.loginController",
+    "Method": "GetName",
+    "RelativePath": "api/login/getName",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "getName",
+        "Type": "QLVT_BE.ViewModels.LoginVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.loginController",
+    "Method": "Login",
+    "RelativePath": "api/login/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "QLVT_BE.ViewModels.LoginVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.NguoiMuaController",
+    "Method": "GetAllPhieuTrinhMua",
+    "RelativePath": "api/NguoiMua/GetAllPhieuTrinhMua/{pg}/{size}/{idPhongBan}/{sortOrder}/{idUser}/{role}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idPhongBan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "sortOrder",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idUser",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.NguoiMuaController",
+    "Method": "GetVatTuChoMua",
+    "RelativePath": "api/NguoiMua/GetVatTuChoMua/{pg}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.NguoiMuaController",
+    "Method": "SearchVatTuChoMua",
+    "RelativePath": "api/NguoiMua/SearchVatTuChoMua/{pg}/{search}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.NguoiMuaController",
+    "Method": "TaoPhieuMua",
+    "RelativePath": "api/NguoiMua/TaoPhieuMua",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phieu",
+        "Type": "QLVT_BE.ViewModels.TaoPhieuMuaMD",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.NotificasController",
+    "Method": "GetCountNoti",
+    "RelativePath": "api/Notificas/GetCountNoti/{idNhan}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idNhan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.NotificasController",
+    "Method": "GetNotiByNguoiNhan",
+    "RelativePath": "api/Notificas/GetNotiByNguoiNhan/{idNhan}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idNhan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.NotificasController",
+    "Method": "SetStatus",
+    "RelativePath": "api/Notificas/SetStatus/{idNoti}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idNoti",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghiSuaController",
+    "Method": "AddPhieuSua",
+    "RelativePath": "api/PhieuDeNghiSua/AddPhieuSua",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phieu",
+        "Type": "QLVT_BE.ViewModels.TaoPhieuSuaVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghiSuaController",
+    "Method": "AllPhieuSuaByPhongBanPhuTrach",
+    "RelativePath": "api/PhieuDeNghiSua/AllPhieuSuaByPhongBanPhuTrach/{idPhongBan}/{role}/{pg}/{size}/{orderShort}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPhongBan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "orderShort",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghiSuaController",
+    "Method": "DuyetPhieuSua",
+    "RelativePath": "api/PhieuDeNghiSua/DuyetPhieuSua/{duyet}/{idPhieu}/{lyDo}/{maBiMat}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "duyet",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "idPhieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "lyDo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "maBiMat",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghiSuaController",
+    "Method": "GetAllPhieu",
+    "RelativePath": "api/PhieuDeNghiSua/GetAllPhieu/{idPhongBan}/{idNguoiDuyet}/{pg}/{size}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPhongBan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idNguoiDuyet",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghiSuaController",
+    "Method": "GetAllStatusPhieuByPB",
+    "RelativePath": "api/PhieuDeNghiSua/GetAllStatusPhieuByPB/{idPhongBan}/{size}/{pg}/{status}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPhongBan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghiSuaController",
+    "Method": "GetImgByPhieu",
+    "RelativePath": "api/PhieuDeNghiSua/GetImgByPhieu/{idChiTietPhieu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idChiTietPhieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghiSuaController",
+    "Method": "GetVatTuByPhieu",
+    "RelativePath": "api/PhieuDeNghiSua/GetVatTuByPhieu/{idphieu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idphieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghiSuaController",
+    "Method": "SetDeNghiThanhLy",
+    "RelativePath": "api/PhieuDeNghiSua/SetDeNghiThanhLy/{idPhieu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPhieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghiSuaController",
+    "Method": "SetNhanVienSua",
+    "RelativePath": "api/PhieuDeNghiSua/SetNhanVienSua/{idNhanVien}/{idPhieu}/{idUserGui}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idNhanVien",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idPhieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idUserGui",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghiSuaController",
+    "Method": "SetSuaXong",
+    "RelativePath": "api/PhieuDeNghiSua/SetSuaXong/{idPhieu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPhieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghiSuaController",
+    "Method": "ShowVTCanSuaByNVSua",
+    "RelativePath": "api/PhieuDeNghiSua/ShowVTCanSuaByNVSua/{idUser}/{pg}/{size}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUser",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghVatTuController",
+    "Method": "GetAllPhieuChiTiet",
+    "RelativePath": "api/PhieuDeNghVatTu/ChiTietPhieu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghVatTuController",
+    "Method": "GetById",
+    "RelativePath": "api/PhieuDeNghVatTu/ChiTietPhieu/{idPhieu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPhieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghVatTuController",
+    "Method": "GetAllPhieuDeNghi",
+    "RelativePath": "api/PhieuDeNghVatTu/DsPhieu/{idPhongBan}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPhongBan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghVatTuController",
+    "Method": "DuyetPhieu",
+    "RelativePath": "api/PhieuDeNghVatTu/DuyetPhieu/{idPhieu}/{duyet}/{idUser}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phieuDuyet",
+        "Type": "QLVT_BE.ViewModels.PhieuDuyetTruongPhongVM",
+        "IsRequired": true
+      },
+      {
+        "Name": "idPhieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "duyet",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "idUser",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghVatTuController",
+    "Method": "GetAllPhieuDuyet",
+    "RelativePath": "api/PhieuDeNghVatTu/GetAllPhieuDuyet/{pg}/{size}/{idPhongBan}/{sortOrder}/{idUser}/{role}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idPhongBan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "sortOrder",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idUser",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghVatTuController",
+    "Method": "GetAllSapXep",
+    "RelativePath": "api/PhieuDeNghVatTu/GetAllSapXep/{pg}/{size}/{idPhongBan}/{sortOrder}/{status}/{choose}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idPhongBan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "sortOrder",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "choose",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghVatTuController",
+    "Method": "GetAllSapXepTheoPhongBan",
+    "RelativePath": "api/PhieuDeNghVatTu/GetAllSapXepTheoPhongBan/{pg}/{size}/{idPhongBan}/{sortOrder}/{choose}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idPhongBan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "sortOrder",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "choose",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhieuDeNghVatTuController",
+    "Method": "TaoPhieu",
+    "RelativePath": "api/PhieuDeNghVatTu/TaoPhieu",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phieu",
+        "Type": "QLVT_BE.ViewModels.TaoPhieuVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhongBanController",
+    "Method": "GetAll",
+    "RelativePath": "api/PhongBan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhongBanController",
+    "Method": "Add",
+    "RelativePath": "api/PhongBan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phongBanMD",
+        "Type": "QLVT_BE.ViewModels.PhongBanMD",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhongBanController",
+    "Method": "GetAllPBSua",
+    "RelativePath": "api/PhongBan/GetAllPBSua",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhongBanController",
+    "Method": "GetById",
+    "RelativePath": "api/PhongBan/IdPhongBan/{idPhongBan}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idPhongBan",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhongBanController",
+    "Method": "Search",
+    "RelativePath": "api/PhongBan/Search/{search}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.PhongBanController",
+    "Method": "Update",
+    "RelativePath": "api/PhongBan/Update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pbMD",
+        "Type": "QLVT_BE.ViewModels.PhongBanMD",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.ThuKhoController",
+    "Method": "AddMaVatTu",
+    "RelativePath": "api/ThuKho/AddMaVatTu/{idVatTu}/{idUser}/{idPhieu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idVatTu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idUser",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idPhieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.ThuKhoController",
+    "Method": "AddVatTu",
+    "RelativePath": "api/ThuKho/AddVatTu",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vatTuVM",
+        "Type": "QLVT_BE.ViewModels.VatTuVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.ThuKhoController",
+    "Method": "CapVatTu",
+    "RelativePath": "api/ThuKho/CapVatTu/{idVatTu}/{idUser}/{idPhieu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idVatTu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idUser",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idPhieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.ThuKhoController",
+    "Method": "GetAllDetailPhieuCapVatTu",
+    "RelativePath": "api/ThuKho/GetAllDetailPhieuCapVatTu/{idPhieu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPhieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.ThuKhoController",
+    "Method": "GetAllPhieuCapVatTu",
+    "RelativePath": "api/ThuKho/GetAllPhieuCapVatTu/{pg}/{size}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.ThuKhoController",
+    "Method": "GetAllPhieuCap",
+    "RelativePath": "api/ThuKho/GetAllVatTuTrongKho/{pg}/{size}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.ThuKhoController",
+    "Method": "GetYeuCauMuaVT",
+    "RelativePath": "api/ThuKho/GetYeuCauMuaVT/{idPhieu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPhieu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.ThuKhoController",
+    "Method": "TaoYeuCauMua",
+    "RelativePath": "api/ThuKho/TaoYeuCauMua",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "phieu",
+        "Type": "QLVT_BE.ViewModels.PhieuYeuCauMuaVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.ThuKhoController",
+    "Method": "XoaVatTuCanMua",
+    "RelativePath": "api/ThuKho/XoaVatTuCanMua/{idQT}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idQT",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.UserController",
+    "Method": "GetById",
+    "RelativePath": "api/User/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/User/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "user",
+        "Type": "QLVT_BE.ViewModels.UserMD",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.UserController",
+    "Method": "ActiveUser",
+    "RelativePath": "api/User/Active/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.UserController",
+    "Method": "AddUser",
+    "RelativePath": "api/User/AddUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "QLVT_BE.ViewModels.UserMD",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.UserController",
+    "Method": "ChangePass",
+    "RelativePath": "api/User/ChangePass/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "changePass",
+        "Type": "QLVT_BE.ViewModels.ChangePassMD",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.UserController",
+    "Method": "DoiMaBiMat",
+    "RelativePath": "api/User/DoiMaBiMat/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "maBiMat",
+        "Type": "QLVT_BE.ViewModels.ChangeMaBiMatMD",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.UserController",
+    "Method": "Get",
+    "RelativePath": "api/User/GetAll/{pg}/{size}/{phongBan}/{chucVu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "phongBan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "chucVu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.UserController",
+    "Method": "GetByPhongBan",
+    "RelativePath": "api/User/PhongBan/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.UserController",
+    "Method": "ResetPass",
+    "RelativePath": "api/User/ResetPass/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.UserController",
+    "Method": "Search",
+    "RelativePath": "api/User/Search/{pg}/{size}/{search}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.UserController",
+    "Method": "SetConnectionId",
+    "RelativePath": "api/User/SetConnectionId/{id}/{connectionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "connectionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.UserController",
+    "Method": "GetTruongPhong",
+    "RelativePath": "api/User/TruongPhong/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.VatTuController",
+    "Method": "GetAllByIdPhongBan",
+    "RelativePath": "api/VatTu/GetAllByIdPhongBan/{idPhongBan}/{pg}/{size}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPhongBan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.VatTuController",
+    "Method": "GetAllBySearch",
+    "RelativePath": "api/VatTu/GetAllBySearch/{idPhongBan}/{searchTen}/{searchVatTu}/{pg}/{size}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPhongBan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "searchTen",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "searchVatTu",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.VatTuController",
+    "Method": "GetVatTuDangYeuCau",
+    "RelativePath": "api/VatTu/GetVatTuDangYeuCau/{idPhongBan}/{pg}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPhongBan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.VatTuController",
+    "Method": "Search",
+    "RelativePath": "api/VatTu/Search/{pg}/{size}/{search}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.VatTuController",
+    "Method": "SearchVatTuDangYeuCau",
+    "RelativePath": "api/VatTu/SearchVatTuDangYeuCau/{search}/{pg}/{idPhongBan}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "pg",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idPhongBan",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.VatTuController",
+    "Method": "GetVatTuSuDung",
+    "RelativePath": "api/VatTu/VatTuSuDung/{idUser}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUser",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.VTQuanTamController",
+    "Method": "Delete",
+    "RelativePath": "api/VTQuanTam/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.VTQuanTamController",
+    "Method": "QuanTam",
+    "RelativePath": "api/VTQuanTam/AddQuanTam",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "qTamMD",
+        "Type": "QLVT_BE.ViewModels.VatTuQuanTamMD",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.VTQuanTamController",
+    "Method": "GetAll",
+    "RelativePath": "api/VTQuanTam/GetAll/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.WriteFileController",
+    "Method": "UploadFile",
+    "RelativePath": "api/WriteFile/UploadFile/{folder}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "folder",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.WriteFileController",
+    "Method": "UploadFiles",
+    "RelativePath": "api/WriteFile/UploadFiles/{folder}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "files",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "folder",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLVT_BE.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[QLVT_BE.WeatherForecast, QLVT_BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
