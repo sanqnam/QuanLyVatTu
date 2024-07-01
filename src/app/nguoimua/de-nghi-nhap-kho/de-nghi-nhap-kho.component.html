@@ -1,0 +1,73 @@
+<div class="row" style="border-bottom: 2px solid blue; margin-bottom: 20px;">
+    <div class="pagetitle col-lg-3 col-md-3">
+      <h1>Đã hoàn thành</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="" >Home</a></li>
+          <li class="breadcrumb-item">Mua vât tư</li>
+          <li class="breadcrumb-item">Đã hoàn thành</li>
+        </ol>
+      </nav>
+  </div>
+  
+  </div>
+  <section class="section profile">
+    <div class="row">
+      
+      <table class="table table-hover">
+        <thead>
+          <tr style="line-height: 36px;">
+            <th scope="col">#</th>          
+            <th scope="col">Số lần sửa</th>
+            <th scope="col">Thời gian tạo</th>
+            <th scope="col">Tổng tiền</th>
+            <th scope="col">Chi tiết</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="line-height: 32px;" *ngFor="let phieu of DsPhieu
+                                  | paginate:{
+                                    itemsPerPage: tableSize,
+                                    currentPage: page,
+                                    totalItems: counts
+                                    }; let i = index ">
+            <th scope="row">{{i+1}}</th>   
+            <td>{{phieu.soLanSuaPhieu}}</td>
+            <td>{{phieu.timeTaoPhieu | date: 'dd/MM/yyyy HH:mm'}}</td>
+            <td>{{formatCurrency(phieu.tongTien) }}</td>     
+            
+            <td>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SuaPhieuMua"  (click)="loadChiTietPhieu(phieu.idPhieuTrinhMua)">
+                  <i class="bx bx-edit"></i>
+                </button></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row" *ngIf="DsPhieu!=null">
+        <pagination-controls class="pagination justify-content-center" style="padding-top: 14px;" previousLabel="Prev"
+          nextLabel="Next" (pageChange)="onTableDataChange($event)">
+        </pagination-controls>
+      </div>
+      
+      <div class="modal fade " id="SuaPhieuMua" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header row">
+              <div class="col-4">
+                <h5 class="modal-title">Chi tiết</h5>
+              </div>
+              <div class="col-6">
+
+              </div>
+              <div class="col-2">
+                <button class="btn btn-success" data-bs-dismiss="modal" aria-label="Close" (click)="Submit()">Nhập Kho</button>
+              </div>
+            </div>
+            <div class="modal-body">              
+                <app-phieu-mua-hoan-thanh-chi-tiet [dsChiTiet] ="dsChiTiet"></app-phieu-mua-hoan-thanh-chi-tiet>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,260 @@
+<div class="pagetitle">
+  <h1>Profile</h1>
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item">Users</li>
+      <li class="breadcrumb-item active">Profile</li>
+    </ol>
+  </nav>
+</div><!-- End Page Title -->
+
+<section class="section profile">
+  <div class="row">
+    <div class="col-xl-4">
+
+      <div class="card">
+        <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+
+          <img [src]="profile.hinhDaiDien" alt="Profile" class="rounded-circle">
+          <h2>{{profile.hoTen}}</h2>
+          <h3>{{profile.username}}</h3>
+          <div class="social-links mt-2">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-xl-8">
+
+      <div class="card">
+        <div class="card-body pt-3">
+          <!-- Bordered Tabs -->
+          <ul class="nav nav-tabs nav-tabs-bordered">
+
+            <li class="nav-item">
+              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Tổng quan</button>
+            </li>
+
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Chỉnh sửa thông tin</button>
+            </li>
+
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Thay đổi mật khẩu</button>
+            </li>
+            <li class="nav-item" *ngIf="displayLanhDao">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-mabimat">Thay đổi mã bí mật</button>
+            </li>
+
+          </ul>
+          <div class="tab-content pt-2">
+
+            <div class="tab-pane fade show active profile-overview" id="profile-overview">
+              <h5 class="card-title">About</h5>
+              <p class="small fst-italic">                  
+                {{profile.aboutMe}}
+              </p>
+
+              <h5 class="card-title">Thông tin tài khoản</h5>
+
+              <div class="row">
+                <div class="col-lg-3 col-md-4 label ">Họ Tên</div>
+                <div class="col-lg-9 col-md-8">{{profile.hoTen}}</div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-md-4 label ">Tên đăng nhập</div>
+                <div class="col-lg-9 col-md-8">{{profile.username}}</div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-md-4 label">Phòng ban</div>
+                <div class="col-lg-9 col-md-8">{{profile.tenPhongBan}}</div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-md-4 label">Chức Vụ</div>
+                <div class="col-lg-9 col-md-8">{{profile.tenChucVu}}</div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-3 col-md-4 label">Điện thoại</div>
+                <div class="col-lg-9 col-md-8">{{profile.dienThoai}}</div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-3 col-md-4 label">Email</div>
+                <div class="col-lg-9 col-md-8">{{profile.email}}</div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-3 col-md-4 label">Địa Chỉ</div>
+                  <div class="col-lg-9 col-md-8">{{profile.diaChi}}</div>
+              </div>
+
+            </div>
+
+            <div class="tab-pane fade profile-edit pt-3" id="profile-edit" >
+
+              <!-- Profile Edit Form -->
+              <form  [formGroup]="editProfile">
+                <div class="row mb-3">
+                  <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Hình ảnh đại diện</label>
+                  <div class="col-md-8 col-lg-9">
+                    <app-image-upload (sendUrl)="sendUrl($event)"></app-image-upload>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Tên đăng nhập</label>
+                  <div class="col-md-8 col-lg-9">
+                    <div class="col-lg-9 col-md-8">{{profile.username}}</div>
+                    <!-- <input type="text" hidden class="form-control" name="username" 
+                      formControlName="username" >  -->
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Họ và Tên</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input type="text"  class="form-control" name="hoTen" formControlName="hoTen" >                  
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="about" class="col-md-4 col-lg-3 col-form-label">Giới thiệu</label>
+                  <div class="col-md-8 col-lg-9">
+                    <textarea name="aboutMe" class="form-control" id="aboutMe" style="height: 100px" 
+                    formControlName="aboutMe" >
+
+                      </textarea>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="company" class="col-md-4 col-lg-3 col-form-label">Phòng Ban</label>
+                  <div class="col-md-8 col-lg-9">{{profile.tenPhongBan}}
+                    <!-- <input name="idPhongBan" hidden type="text" class="form-control" id="tenPhongBan" formControlName="idPhongBan"
+                     [attr.disabled]="true"> -->
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="Job" class="col-md-4 col-lg-3 col-form-label">Chức Vụ</label>
+                  <div class="col-md-8 col-lg-9">{{profile.tenChucVu}}
+                  <!-- <input name="idChucVu" hidden type="text" class="form-control" id="idChucVu" 
+                    formControlName="idChucVu" [attr.disabled]="true"> -->
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="Address" class="col-md-4 col-lg-3 col-form-label">Địa chỉ</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="diaChi" type="text" class="form-control" id="diaChi" formControlName="diaChi">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Điện thoại</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="dienThoai" type="text" class="form-control" id="dienThoai" formControlName="dienThoai">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="email" type="email" class="form-control" id="Email" formControlName="email">
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary" (click)="submit()">Save Changes</button>
+                </div>
+              </form> 
+
+            </div>              
+
+            <div class="tab-pane fade pt-3" id="profile-change-password">
+              <!-- Change Password Form -->
+              <form>
+
+                <div class="row mb-3">
+                  <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Current Password</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="password" type="password" class="form-control" id="currentPassword">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">New Password</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="newpassword" type="password" class="form-control" id="newPassword" >
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Re-enter New Password</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="renewpassword" type="password" class="form-control" id="renewPassword">
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" (click)="sendToHeader()" class="btn btn-primary" >Change Password</button>
+                </div>
+              </form> <!--End Change Password Form -->
+
+            </div>
+            <div class="tab-pane fade pt-3" id="profile-change-mabimat" *ngIf="displayLanhDao">
+              <!-- Change Password Form -->
+              <form [formGroup]="groupMaBiMat">
+                <div class="row mb-3">
+                  <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Current mã</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="password" type="password" class="form-control" id="oldMa" formControlName="oldMa" >
+                    <div *ngIf="displayOld">
+                      <small class="text-danger">Trường bắt buộc phải nhập.</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">New mã</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="newpassword" type="password" class="form-control" id="newPassword" formControlName="newMa">
+                    <div *ngIf="displayNew">
+                      <small class="text-danger">Trường bắt buộc phải nhập.</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Re-enter New mã</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="renewpassword" type="password" class="form-control" id="renewPassword" formControlName="reNewMa">
+                    <div *ngIf="display">
+                      <small class="text-danger">Mã không khớp. Vui lòng nhập lại.</small>
+                    </div>
+                    <div *ngIf="displayRe">
+                      <small class="text-danger">Trường bắt buộc phải nhập.</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" (click)="sendToMa()" class="btn btn-primary" >Change Password</button>
+                </div>
+              </form> <!--End Change Password Form -->
+
+            </div>
+
+          </div><!-- End Bordered Tabs -->
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

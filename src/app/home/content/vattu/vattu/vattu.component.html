@@ -1,0 +1,118 @@
+<div class="pagetitle">
+    <div class="col-lg-12" style="padding: 10px 0 0px 0; border-bottom: 2px solid blue;"> 
+      <div class="row">
+        <div class="col-lg-4"> 
+          <div class="row">
+            <div class="col-lg-6" style="max-width: 60%;float: left;">
+              <h1>{{title}}</h1>
+              <nav>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active">VatTu</li>
+                </ol>
+              </nav>
+            </div>
+       
+          </div>
+        </div>  
+        <div class="col-lg-5">          
+        </div>
+        <div class="col-lg-3"> 
+          <div ><!--class="{{searchClass}}"-->
+              <input type="text" class="form-control " name="search" 
+                placeholder="Search" title="Enter search keyword" 
+                [(ngModel)]="search" (ngModelChange)="Search()">
+             
+          </div>
+        </div>
+      </div>
+    </div>
+    </div><!-- End Page Title -->
+    <section class="section">
+        <div class="row align-items-top" *ngIf="DsVatTu !=null">
+          <div class="col-lg-3" style="float: left;" 
+              *ngFor="let vattu of DsVatTu| paginate:{itemsPerPage: tableSize,currentPage: page,totalItems: count};">
+              <div class="card" >
+                  <div>
+                      <ng-image-slider 
+                          [images]="vattu.hinhAnhVatTus"
+                          [infinite]="false"
+                          [autoSlide]="1"
+                          [imageSize]="{width: '100%', height: 200}"
+                          slideImage="1"
+                          #nav
+                          >
+                      </ng-image-slider>
+                      
+                  </div>
+
+                  <div class="card-body">
+                      <h5 class="card-title">{{vattu.tenVatTu}}</h5>
+                      <p class="card-text">Đơn vị tính: {{vattu.donViTinh}}</p>
+                      <p class="card-text" *ngIf="vattu.thongSo != null; else thongSoNull">
+                          {{vattu.thongSo}}
+                      </p>
+                      <ng-template #thongSoNull>
+                        <p class="card-text" >
+                          Thông số đang được cập nhật
+                        </p>
+                      </ng-template>
+                      <button class="btn btn-primary" (click)="AddQuanTam(vattu.idVatTu)">Thêm DS chờ</button>
+                  </div>
+              </div>
+            </div>          
+        </div>
+        <div class="row" *ngIf="count>=tableSize"> <!-- Phân trang-->
+          <div class="col-lg-12">
+            <div class="card">
+              <!-- <div class="card-body"> -->
+                <pagination-controls class="pagination justify-content-center" style="padding-top: 14px;"
+                  previousLabel="Prev"
+                  nextLabel="Next"
+                  (pageChange)="onTableDataChange($event)"
+                  >
+                </pagination-controls>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+              <!-- End Table with stripped rows -->
+              <!-- <div class="modal fade" id="ExtralargeModal" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Chỉnh sửa tài khoản</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"  
+                      aria-label="Close" (click)="ngOnInit()"></button>
+                    </div>
+                    <div class="modal-body">
+                      <app-edit [chiTietUser]="user" [PhongBan]="dsPhongBan" [ChucVu]="dsChucVu"></app-edit>
+                    </div>
+                  </div>
+                </div>
+              </div>End Extra Large Modal -->
+              <!-- <div class="modal fade" id="AddUser" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Thêm Tài Khoản</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"  
+                      aria-label="Close" (click)="ngOnInit()"></button>
+                    </div>
+                    <div class="modal-body">
+                      <app-add [PhongBan]="dsPhongBan" [ChucVu]="dsChucVu"></app-add>
+                    </div>
+                  </div>
+                </div>
+              </div>Thêm Mới -->
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "square-jelly-box" [fullScreen] = "true">
+       
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </ngx-spinner> -->
+    </section>

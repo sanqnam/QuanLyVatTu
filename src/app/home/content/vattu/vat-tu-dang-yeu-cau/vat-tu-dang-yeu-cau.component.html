@@ -1,0 +1,54 @@
+<div class=" row" style="border-bottom: 2px solid blue; margin-bottom: 20px;">
+  <div class="pagetitle col-lg-4 col-md-4">
+    <h1>Vật Tư Đang Yêu Cầu</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">Vật tư</li>
+        <li class="breadcrumb-item active">Vật Tư Đang Yêu Cầu</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="col-lg-5 col-md-5">
+
+  </div>
+  <div class="col-lg-3 col-md-3">
+    <input type="text" class="form-control " name="search" placeholder="Search" title="Enter search keyword"
+      [(ngModel)]="search" (ngModelChange)="Search()">
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <table class="table table-hover">
+      <thead>
+        <tr style="line-height: 36px;">
+          <th scope="col">#</th>
+          <th scope="col">Tên vật tư</th>
+          <th scope="col">Mã vật tư</th>
+          <th scope="col">Số lượng đề nghị</th>
+          <th scope="col">Tình trạng xử lý</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="line-height: 32px;" *ngFor="let vatTu of dsVatTu | paginate:{
+              itemsPerPage: 10,
+              currentPage: pg,
+              totalItems: counts
+              };
+                         let i = index ">
+          <th scope="row">{{i+1}}</th>
+          <td>{{vatTu.tenVatTu}}</td>
+          <td>{{vatTu.maVatTu}}</td>
+          <td>{{vatTu.soLuongYeuCau}}</td>
+          <td>{{vatTu.tinhTrangXuLy}}</td>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+<div class="row">
+  <pagination-controls class="pagination justify-content-center" style="padding-top: 14px;" previousLabel="Prev"
+    nextLabel="Next" (pageChange)="onTableDataChange($event)">
+  </pagination-controls>
+</div>

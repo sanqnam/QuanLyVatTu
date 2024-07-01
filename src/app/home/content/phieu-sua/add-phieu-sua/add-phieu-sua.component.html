@@ -1,0 +1,80 @@
+<section class="section">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-body">
+          <form class="row g-3" [formGroup]="PhieuVT" (submit)="send()" (click)="hello()" >
+            <div class="col-lg-6" style="padding-top: 15px;">
+              <input type="text" class="form-control " formControlName="lyDo" placeholder="Nhập lý do sửa">
+              <small class="text-danger" *ngIf="isLyDo">Nhập lý do để tạo</small> 
+            </div>
+            <div class="col-md-3">
+              <div class="form-floating mb-3 ">
+                <select class="form-select" name="idPhongBan" formControlName="idPhongNhan">
+                  <ng-container *ngFor="let phongBan of dsPhongBan;">
+                    <option [value]="phongBan.idPhongBan">
+                     {{phongBan.tenPhongBan}}
+                    </option>
+                  </ng-container>
+                </select>
+                <label for="floatingSelect">Phòng Ban Sửa</label>
+                <small class="text-danger" *ngIf="isTP">Trường bắt buộc</small> 
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-floating mb-3 ">
+                <select class="form-select" name="idPhongBan" formControlName="idThuTruongNhan">
+                  <ng-container *ngFor="let thuTruong of dsThuTruong">
+                    <option [value]="thuTruong.idUser">
+                     {{thuTruong.maChucVu}}-{{thuTruong.hoTen}}
+                    </option>
+                  </ng-container>
+                </select>
+                <label for="floatingSelect">Thủ Trưởng Nhận</label>
+                <small class="text-danger" *ngIf="isTPNhan">Trường bắt buộc</small> 
+              </div>
+            </div>
+            <table class="table datatable table-hover col-lg-12">
+              <thead>
+                <tr style="line-height: 36px;">
+                  <th scope="col">#</th>
+                  <th scope="col">Tên Vật Tư</th>
+                  <th scope="col">Mã Vật Tư</th>
+                  <th scope="col">Mô tả tình trạng</th>
+                  <th scope="col">Minh chứng</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr formArrayName="ChiTietPhieuSuas" *ngFor="let cont of dsPhieu;  
+                    let i = index;" style="line-height: 29px;">
+                    <th scope="row">{{i+1}}</th>
+                    <td>
+                      {{cont.tenVatTu}}
+                    </td>
+                    <td>
+                      {{cont.maVatTu}}
+                    </td>
+                    <td><input type="text" [value]="" id="moTa{{i}}" (focusout)="onInput(i)" ></td>
+                    <td id="url{{i}}">
+                      <app-more-ima-upload (sendUrl)="sendUrl($event,i)"
+                        style="width: 20px; height: 20px;"></app-more-ima-upload>
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- End Table with stripped rows -->
+            <button class="btn btn-primary">Tạo Phiếu</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ngx-spinner bdColor="rgba(0, 0, 0, 0.2)" size="medium" color="#fff" type="square-jelly-box" [fullScreen]="false">
+    <!-- <p style="color: white" > Loading... </p> -->
+    <div class="d-flex justify-content-center">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </ngx-spinner>
+</section>

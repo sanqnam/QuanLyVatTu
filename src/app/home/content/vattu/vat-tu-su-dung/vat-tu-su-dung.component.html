@@ -1,0 +1,88 @@
+<div class="row" style="margin-bottom: 20px; border-bottom: 2px solid blue;">
+  <div class="pagetitle col-lg-4 col-md-4">
+    <h1>Vật Tư Đang Sử Dụng</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">Vật tư</li>
+        <li class="breadcrumb-item active">Vật tư đang sử dụng</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="col-lg-2 col-md-2">
+    <form [formGroup]="filterForm">
+      <div class=" row">
+          <select class="form-select" name="size" formControlName="size" (change)="filterSelect()"
+            [(ngModel)]="tableSize">
+            <ng-container *ngFor="let size of tableSizes">
+              <option [selected]="size == tableSize" [value]="size">{{size}}</option>
+            </ng-container>
+          </select>
+        </div>
+    </form>
+  </div>
+    <div class="col-lg-2 col-md-2">
+      <div class="search-bar">
+        <input type="text" class="form-control " name="search" [(ngModel)]="searchTenNguoiDung" placeholder="Tên người dùng"
+          title="Enter search keyword" (ngModelChange)="SearchTenVatTu()">
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2">
+      <div class="search-bar">
+        <input type="text" class="form-control " name="search" [(ngModel)]="searchTenVatTu" placeholder="Tên vật tư"
+          title="Enter search keyword" (ngModelChange)="SearchTenVatTu()">
+      </div>
+    </div>
+
+  <div class="col-lg-2 col-md-2">
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#TaoPhieu" (click)="SenData()">
+      <i class="bi bi-calendar-plus"></i> | Tạo Phiếu </button>
+  </div>
+</div>
+<table class="table table-hover">
+  <thead>
+    <tr style="line-height: 36px;">
+      <th scope="col">#</th> 
+      <th scope="col">Người dùng</th>
+      <th scope="col">Tên vật tư</th>
+      <th scope="col">Mã vật tư</th>
+      <th scope="col">Tình Trạng</th>
+      <th scope="col">chọn</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="line-height: 32px;" *ngFor="let vatTu of dsVatTu |paginate:{
+      itemsPerPage: tableSize,
+      currentPage: page,
+      totalItems: count
+      };
+                       let i = index ">
+      <th scope="row">{{i+1}}</th>
+      <td>{{vatTu.nguoiDung}}</td>
+      <td>{{vatTu.tenVatTu}}</td>
+      <td>{{vatTu.maVatTu}}</td>
+      <td>{{vatTu.tinhTrang}}</td>
+      <td>
+        <input id class="form-check-input me-1 checkboxVt" type="checkbox" value="{{vatTu.idChiTietVatTu}}"
+          aria-label="..." (click)="CheckBox(vatTu)">
+      </td>
+  </tbody>
+</table>
+<pagination-controls class="pagination justify-content-center" style="padding-top: 14px;" previousLabel="Prev"
+  nextLabel="Next" (pageChange)="onTableDataChange($event)">
+</pagination-controls>
+<div class="modal fade" id="TaoPhieu" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Tạo Phiếu Đề Nghị Sửa Vật Tư</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+          (click)="ngOnInit()"></button>
+      </div>
+      <div class="modal-body">
+        <app-add-phieu-sua [dsPhieu]="dsPhieu" [clicks]="false"></app-add-phieu-sua>    
+      </div>
+    </div>
+  </div>
+</div>

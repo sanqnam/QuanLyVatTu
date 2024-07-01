@@ -1,0 +1,34 @@
+<body class="{{toggleClass}}" style="position: relative;">
+  <app-header (dataToggle)="changeToggle($event)" ></app-header>
+  <div class="sideBarToggler" mode="side" >
+    <app-sidebar></app-sidebar>
+  </div>
+
+
+  <main id="main" class="main">
+    <!-- <div *ngFor="let message of messages">
+      {{message}}
+    </div>
+    <form (ngSubmit)="sendMessage()">
+      <input type="text" [(ngModel)] = "username" name="connectionId">
+      <input type="text" [(ngModel)] = "toUser" name="toId">
+      <input type="text" [(ngModel)]  ="user" name="user" >
+      <input type="text" [(ngModel)]="message" name="message" placeholder="Message">
+      <button type="submit">Send</button>
+    </form> -->
+
+    <router-outlet ></router-outlet>
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Quản lý vật tư</span></strong>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+</body>
+
+

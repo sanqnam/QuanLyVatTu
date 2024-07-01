@@ -1,0 +1,50 @@
+<div class="tab-pane fade show active profile-overview" id="profile-overview"> 
+
+    <div class="card" (click)="buildDS(dsChiTiet)">
+      <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th class="col">#</th>
+                    <th scope="col" class="col-3">Tên vật tư</th>
+                    <th scope="col" class="col-2">Đơn vị tính</th>
+                    <th scope="col" class="col-2">Đon giá</th>
+                    <th scope="col" class="col-1">Số lượng</th>
+                    <th scope="col" class="col-3">Đơn cung cấp</th>
+                    <th scope="col" class="col-1">VAT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let ct of dsChiTiet; 
+                      let i = index;">
+                    <td>{{i+1}}</td>
+                    <td>{{ct.tenVatTu}}</td>
+                    <td>{{ct.donViTinh}}</td>   
+                    <td><input type="number"  [(ngModel)]="ct.donGia" (ngModelChange)="InputGia(i,$event)" class="form-control"></td>
+                    <td><input type="number"  [(ngModel)]="ct.soluong" (ngModelChange)="InputSoluong(i,$event)" class="form-control"></td>
+                    <td><input type="text"  [(ngModel)]="ct.donViCungCap" (ngModelChange)="InputDonViCungCap(i,$event)" class="form-control"></td>
+                    <td><input type="text"  [(ngModel)]="ct.vat" (ngModelChange)="InputVat(i,$event)" class="form-control" ></td>            
+                  </tr>
+                </tbody>
+              </table>      
+      </div>
+      <div class="row">
+        <div class="col-10">
+            <input type="text" [value]="" id="lyDo" (change)="inputLyDo()" class="form-control"placeholder="Nhập lý do sửa">
+            <small class="text-danger" *ngIf="isLyDo">Bắt buộc phải nhập mã để duyệt</small>
+        </div>
+        
+        <div class="col-2"><button class="btn btn-outline-success" (click)="Send()">Xác Nhận</button></div>
+      </div>
+      
+    </div>
+
+
+</div>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="square-jelly-box" [fullScreen]="true">
+<div class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+</ngx-spinner>

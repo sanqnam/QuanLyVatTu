@@ -1,0 +1,83 @@
+<div class="tab-pane fade show active profile-overview" id="profile-overview">
+    
+
+    <div class="card">
+      <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th class="col">#</th>
+                    <th scope="col" class="col-3">Tên vật tư</th>
+                    <th scope="col" class="col-2">Đơn vị tính</th>
+                    <th scope="col" class="col-1">Đon giá</th>
+                    <th scope="col" class="col-2">Số lượng</th>
+                    <th scope="col" class="col-4">Đơn cung cấp</th>
+                    <th scope="col" class="col-1">VAT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let ct of chiTiet; 
+                      let i = index;">
+                    <td>{{i+1}}</td>
+                    <td>{{ct.tenVatTu}}</td>
+                    <td>{{ct.donViTinh}}</td>   
+                    <td>{{ct.donGia}}</td>
+                    <td>{{ct.soluong}}</td>
+                    <td>{{ct.donViCungCap}}</td>
+                    <td>{{ct.vat}}</td>            
+                  </tr>
+                </tbody>
+              </table>
+
+        <ng-template [ngIf]="khongDuyet==2" | [ngIfElse]="elsee">
+          <div class="row" style="padding-bottom: 10px;">
+            <div class="col-lg-3">
+              <strong>
+                Nhập lý do không duyệt:
+              </strong>
+            </div>
+            <div class="col-lg-7">
+              <input type="text" [value]="" id="lyDo" (focusout)="InputLyDo()" class="form-control">
+            </div>
+            
+            <div class="col-lg-2">
+              <button type="button" class="btn btn-outline-success"(click)="Send()" >Xác nhận</button>
+            </div>
+
+          </div>
+        </ng-template>
+        <ng-template #elsee>
+
+        </ng-template>
+        <div class="row g-3">
+          <div class="col-lg-2">
+            <button type="button" class="btn btn-outline-success" (click)="isStatus()"  >Duyệt
+              Phiếu</button>
+          </div>            
+          <div class="col-lg-8 row inputMa" >
+            <div class="col-3 ">
+             <p> Nhập mã để duyệt</p>
+            </div>
+            <div class="col-9 ">
+              <input type="password" id="maBiMat" class="form-control "(change)="inputMa()" >
+              <small class="text-danger" *ngIf="displayMa">Bắt buộc phải nhập mã để duyệt</small>
+            </div>            
+          </div>
+          <div class="col-lg-2">
+            <button type="button" class="btn btn-outline-danger" (click)="khongDuyet = 2">Không duyệt</button>
+          </div>  
+        </div>
+
+      </div>
+      
+    </div>
+
+
+</div>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="square-jelly-box" [fullScreen]="true">
+<div class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+</ngx-spinner>

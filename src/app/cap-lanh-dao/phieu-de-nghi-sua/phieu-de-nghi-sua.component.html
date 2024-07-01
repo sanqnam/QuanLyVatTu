@@ -1,0 +1,142 @@
+<div class="row" style="border-bottom: 2px solid blue; margin-bottom: 20px;">
+  <div class="pagetitle col-lg-3 col-md-3">
+    <h1>Phiếu Chờ Duyệt</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">Phiếu</li>
+        <li class="breadcrumb-item active">Phiếu Sửa</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="col-lg-9 col-md-9">
+    <form [formGroup]="filterForm">
+      <div class="row">
+        <div class="col-2" style="float: left;">
+          <select class="form-select" name="size" formControlName="size" (change)="filterSelect()"
+            [(ngModel)]="tableSize">
+            <ng-container *ngFor="let size of tableSizes">
+              <option [selected]="size == tableSize" [value]="size">{{size}}</option>
+            </ng-container>
+          </select>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="accordion accordion-flush " id="mainAccordion">
+  <table class="table table-hover">
+    <thead>
+      <tr style="line-height: 36px;">
+        <th scope="col">#</th>
+        <th scope="col">Người Yêu Cầu</th>
+        <th scope="col">Phòng Ban Nhận</th>
+        <th scope="col">Time Tạo</th>
+        <th scope="col">Lý do</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let dsphieu of DsPhieu | paginate : { itemsPerPage: tableSize,
+                      currentPage: page,
+                      totalItems: counts }; let i = index">
+        <tr data-bs-toggle="collapse" [attr.data-bs-target]="'#faq' + i" (click)="chiTiet(dsphieu)"
+          style="line-height: 32px;">
+          <th scope="row">{{i+1}}</th>
+          <td>{{dsphieu.hoTen}}</td>
+          <td>{{dsphieu.phongBanNhan}}</td>
+          <td>{{dsphieu.timeTao | date: 'dd/MM/yyyy HH:mm' }}</td>
+          <td>{{dsphieu.lyDo}}</td>
+        </tr>
+        <tr>
+          <td colspan="6" style=" padding: 0;">
+            <div [id]="'faq' + i" class="accordion-collapse collapse" [attr.data-bs-parent]="'#mainAccordion'">
+              <div class="accordion-body">
+                <table class="table table-hover">
+                  <thead>
+                    <tr class="table-active" style="line-height: 36px;">
+                      <th class="">#</th>
+                      <th scope="col-1" class="col">Tên vật tư</th>
+                      <th scope="col-3" class="col">Mã vật tư</th>
+                      <th scope="col-1" class="col">Tình trạng</th>
+                      <th scope="col-1" class="col">Hình</th>
+                      <th scope="col-1" class="col">
+                        <button class="btn btn-dark btn-rounded-pill" (click)="XuLy(dsphieu)" data-bs-toggle="modal"
+                          data-bs-target="#duyetPhieu">Xử lý</button>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let ct of chiTietPhieu;let i = index" class="table-info" style="line-height: 32px;">
+                      <td>{{i+1}}</td>
+                      <td>{{ct.tenVatTu}}</td>
+                      <td>{{ct.maVatTu}}</td>
+                      <td>{{ct.moTaTinhTrang}}</td>
+                      <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hinh">
+                          <i class="bi bi-card-image" (click)="loadHinh(ct)"></i>
+                        </button>
+                      </td>
+                      <td>
+                      </td>
+
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
+
+<div class="row" *ngIf="DsPhieu!=null">
+  <pagination-controls class="pagination justify-content-center" style="padding-top: 14px;" previousLabel="Prev"
+    nextLabel="Next" (pageChange)="onTableDataChange($event)">
+  </pagination-controls>
+</div>
+
+<div class="modal fade " id="ExtralargeModal" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Chi tiết phiếu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+          (click)="ngOnInit()"></button>
+      </div>
+      <div class="modal-body">
+        <!-- <app-chitietphieu [chiTiet]="chiTietPhieu" [phieu]="phieu" [display]="display"> </app-chitietphieu> -->
+        <app-chi-tiet-phieu-sua [chiTiet]="chiTietPhieu" [phieu]="phieu"></app-chi-tiet-phieu-sua>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade " id="duyetPhieu" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Phiếu duyệt</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+          (click)="ngOnInit()"></button>
+      </div>
+      <div class="modal-body">
+        <app-pupup-duyet-phieu [idPhieu]="idPhieu" [isHien]="true">
+        </app-pupup-duyet-phieu>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade " id="hinh" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Hình hinh họa</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- <app-chitietphieu [chiTiet]="chiTietPhieu" [phieu]="phieu" [display]="display"> </app-chitietphieu> -->
+        <app-view-hinh-anh [currentIndex]="currentIndex" [dsImg]="dsImg"> </app-view-hinh-anh>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+.truncate {
+    white-space: nowrap;       /* Ngăn chặn text xuống dòng */
+    overflow: hidden;          /* Ẩn phần text tràn ra ngoài */
+    text-overflow: ellipsis;   /* Thay thế phần text tràn ra bằng dấu chấm lửng */
+  }
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }

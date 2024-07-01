@@ -1,0 +1,36 @@
+<div class="tab-pane fade show active profile-overview" id="profile-overview">
+    
+
+    <div class="card">
+      <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th class="col" class="col-1">#</th>
+                    <th scope="col" class="col-3">Tên vật tư</th>
+                    <th scope="col" class="col-2">Đơn vị tính</th>
+                    <th scope="col" class="col-2">Số lượng</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let ct of chiTiet; 
+                      let i = index;">
+                    <td>{{i+1}}</td>
+                    <td>{{ct.tenVatTu}}</td>
+                    <td>{{ct.donViTinh}}</td>   
+                    <td>{{ct.soluong}}</td>        
+                  </tr>
+                </tbody>
+              </table>
+      </div>      
+    </div>
+
+
+</div>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="square-jelly-box" [fullScreen]="true">
+<div class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+</ngx-spinner>

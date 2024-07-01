@@ -1,0 +1,69 @@
+<div class="card" id="addChucVu">
+    <div class="card-body">
+        <!-- Floating Labels Form -->
+        <form class="row g-3" [formGroup]="addVatTu">
+            <div class="col-md-5">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName" name="tenVatTu"
+                        formControlName="tenVatTu">
+                    <label for="floatingName">Tên vật tư</label>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName" name="maVatTu"
+                        formControlName="maVatTu">
+                    <label for="floatingName">Mã vật tư</label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName" name="donViTinh"
+                        formControlName="donViTinh">
+                    <label for="floatingName">Đơn vị tính</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName" name="thongSo"
+                        formControlName="thongSo">
+                    <label for="floatingName">Thông số</label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="floatingName" name="soLuongTonKho"
+                        formControlName="soLuongTonKho">
+                    <label for="floatingName">Số lượng</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName" name="viTri"
+                        formControlName="viTri">
+                    <label for="floatingName">Vị Trí</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName" name="ghiChu"
+                        formControlName="ghiChu">
+                    <label for="floatingName">Ghi chú</label>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="text-center" style="padding-top: 10px;">
+                    <button type="submit" class="btn btn-primary" (click)="Submit()">Thêm</button>
+                </div>
+            </div>
+        </form><!-- End floating Labels Form -->
+    </div>
+    <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "square-jelly-box" [fullScreen] = "true">
+        <!-- <p style="color: white" > Loading... </p> -->
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </ngx-spinner>
+</div>

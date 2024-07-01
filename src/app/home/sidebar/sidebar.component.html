@@ -1,0 +1,273 @@
+<aside id="sidebar" class="sidebar">
+
+  <ul class="sidebar-nav" id="sidebar-nav">
+
+    <li class="nav-item">
+      <a class="nav-link " routerLink="dashboard" [routerLinkActive]="'active'" *ngIf="displayLanhDao || displayQuanTri||displayThuKho">
+        <i class="bi bi-grid"></i>
+        <span>Dashboard</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" *ngIf="displayQuanTri" data-bs-target="#components-nav" data-bs-toggle="collapse"
+        href="#">
+        <i class="ri-shield-user-fill"></i><span>Quản Trị</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="#" routerLink="user" [routerLinkActive]="'active'">
+            <i class="ri-user-2-fill"></i><span>Nhân Sự</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" routerLink="phongban" [routerLinkActive]="'active'">
+            <i class="ri-flood-fill"></i><span>Phòng Ban</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" routerLink="chucvu" [routerLinkActive]="'active'">
+            <i class="ri-git-merge-fill"></i><span>Chức Vụ</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#" routerLink="vattu"
+        [routerLinkActive]="'active'">
+        <i class="bi bi-journal-text"></i><span>Vật tư</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="#" routerLink="quantam" [routerLinkActive]="'active'">
+            <i class="ri-shopping-cart-fill"></i><span>Giỏ vật tư</span>
+          </a>
+        </li>
+        <li>
+          <a href="forms-editors.html" routerLink="vattusudung" routerLinkActive="active">
+            <i class="ri-hand-coin-line"></i><span>Đang sử dụng</span>
+          </a>
+        </li>
+        <li>
+          <a href="forms-validation.html" routerLink="vattuyeucau" routerLinkActive="active">
+            <i class="bi bi-circle"></i><span>Đang yêu cầu</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#phieu-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-layout-text-window-reverse"></i><span>Phiếu</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="phieu-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#yeucauvattu-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-clipboard-plus"></i><span>Dề nghị vật tư</span>
+          </a>
+          <ul id="yeucauvattu-nav" class="nav-content collapse" data-bs-parent="#phieu-nav" style="padding-left: 20px;">
+            <li>
+              <a href="#" [routerLinkActive]="'active'" routerLink="choduyet">
+                <i class="bi bi-circle"></i><span>Đang xử lý</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" [routerLinkActive]="'active'" routerLink="phieuhoanthanh">
+                <i class="bi bi-circle"></i><span>Đã hoàn thành</span>
+              </a>
+            </li>
+            <li *ngIf="displayLanhDao">
+              <a href="#" [routerLinkActive]="'active'" routerLink="phieudenghibyphongban">
+                <i class="bi bi-circle"></i><span>Danh sách phiếu</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#sauvattu-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-clipboard-plus"></i><span>Yêu cầu sửa chữa</span>
+          </a>
+          <ul id="sauvattu-nav" class="nav-content collapse" data-bs-parent="#phieu-nav" style="padding-left: 20px;">
+            <li>
+              <a href="#" [routerLinkActive]="'active'" routerLink="phieusuadangxuly">
+                <i class="bi bi-circle"></i><span>Đang xử lý</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" [routerLinkActive]="'active'" routerLink="phieusuadahoanthanh">
+                <i class="bi bi-circle"></i><span>Đã hoàn thành</span>
+              </a>
+            </li>
+            <li *ngIf="displayLanhDao">
+              <a href="#" [routerLinkActive]="'active'" routerLink="allphieusua" >
+                <i class="bi bi-circle"></i><span>Danh sách phiếu</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav-item" *ngIf="displayLanhDao">
+      <a class="nav-link collapsed" data-bs-toggle="collapse" href="#" 
+      data-bs-target="#phieuduyet">
+        <i class="bi bi-bar-chart"></i><span>Phê duyệt</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="phieuduyet" class="nav-content collapse" data-bs-parent="#sidebar-nav" >
+        <li>
+          <a [routerLink]="'phieuduyet'" [routerLinkActive]="'active'">
+            <i class="bi bi-circle"></i><span>Yêu cầu vật tư</span>
+          </a>
+        </li>
+        <li *ngIf="displayTrinhMua">
+          <a [routerLink]="'phieuduyetmuavattu'" [routerLinkActive]="'active'">
+            <i class="bi bi-circle"></i><span>Trình mua</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#sauvattu-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-clipboard-plus"></i><span>Sửa vật tư</span>
+          </a>
+          <ul id="sauvattu-nav" class="nav-content collapse" data-bs-parent="#phieuduyet" style="padding-left: 20px;">
+            <li>
+              <a href="#" [routerLinkActive]="'active'" routerLink="phieuduyetsua">
+                <i class="bi bi-circle"></i><span>Xác nhận</span>
+              </a>
+            </li>
+            <li *ngIf="this.displaySua">
+              <a href="#" [routerLinkActive]="'active'" routerLink="phieusuatiepnhan" >
+                <i class="bi bi-circle"></i><span>Phân công</span>
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+        <li>
+          <a >
+            <i class="bi bi-circle"></i><span>Đề nghị thu hồi</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav-heading">Công việc</li>
+
+    <li class="nav-item" *ngIf="displayThuKho">
+      <a class="nav-link collapsed" data-bs-target="#thukho" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-bar-chart"></i><span>Thủ Kho</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="thukho" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="forms-layouts.html" routerLink="dsvattu" [routerLinkActive]="'active'">
+            <i class="ri-sort-desc"></i><span>Danh sách vật tư</span>
+          </a>
+        </li>
+        <li>
+          <a  class="nav-link collapsed"
+            data-bs-target="#sauvattu-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-circle"></i><span>Phiếu yêu cầu</span>
+          </a>
+          <ul id="sauvattu-nav" class="nav-content collapse" data-bs-parent="#phieu-nav" style="padding-left: 20px;">
+            <li>
+              <a href="#" [routerLinkActive]="'active'" routerLink="phieucapvattu">
+                <i class="bi bi-circle"></i><span>Xử lý phiếu</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" [routerLinkActive]="'active'" routerLink="choduyet">
+                <i class="bi bi-circle"></i><span>Yêu cầu mua</span>
+              </a>
+            </li>
+            <li>
+              <a href="" [routerLinkActive]="'active'" routerLink="nhapkho">
+                <i class="bi bi-circle"></i><span>Yêu cầu nhập kho</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Đã hoàn thành</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a  class="nav-link collapsed"
+            data-bs-target="#thuhoi-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-circle"></i><span>Đề nghị thu hồi</span>
+          </a>
+          <ul id="thuhoi-nav" class="nav-content collapse" data-bs-parent="#phieu-nav" style="padding-left: 20px;">
+            <li>
+              <a href="#" [routerLinkActive]="'active'" routerLink="choduyet">
+                <i class="bi bi-circle"></i><span>Danh sách thu hồi</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" >
+                <i class="bi bi-circle"></i><span>Đã xử lý</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav-item" *ngIf="displayNguoiMua">
+      <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-gem"></i><span>Mua vật tư</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href=""routerLink="vattucanmua" routerLinkActive="active">
+            <i class="bi bi-circle"></i><span>Vật tư cần mua</span>
+          </a>
+        </li>
+        <li>
+          <a href=""routerLink="phieumuatra" routerLinkActive="active">
+            <i class="bi bi-circle"></i><span>Phiếu bị trả</span>
+          </a>
+        </li> 
+        <li>
+          <a href=""routerLink="denghinhapkho" routerLinkActive="active">
+            <i class="bi bi-circle"></i><span>Đề nghị nhập kho</span>
+          </a>
+        </li>
+        <li>
+          <a href=""routerLink="phieumuahoanthanh" routerLinkActive="active">
+            <i class="bi bi-circle"></i><span>Đã hoàn thành</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- dành cho nhân viên phụ trách sửa vật tư -->
+    <li class="nav-item" *ngIf="displayNguoiSua" >
+      <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-gem"></i><span>Sửa vật tư</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="" routerLink="vattucansua" routerLinkActive="active">
+            <i class="bi bi-circle"></i><span>Vât tư cần sửa</span>
+          </a>
+        </li>
+        <li>
+          <a href="icons-bootstrap.html">
+            <i class="bi bi-circle"></i><span>Đang xử lý</span>
+          </a>
+        </li>
+        <li>
+          <a href="icons-bootstrap.html">
+            <i class="bi bi-circle"></i><span>Đề nghị nhập kho</span>
+          </a>
+        </li>
+        <li>
+          <a href="icons-bootstrap.html">
+            <i class="bi bi-circle"></i><span>Đã hoàn thành</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</aside><!-- End Sidebar-->

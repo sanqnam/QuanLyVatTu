@@ -1,0 +1,101 @@
+<div class="card" >  
+    <div class="card-body">
+      <!-- Floating Labels Form -->
+      <form class="row g-3" [formGroup]="addUser"> 
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingName" [readOnly]="false"
+            name="username" formControlName="username"  >
+            <label for="floatingName">Username</label> <!-- -->
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingName" 
+              name="hoTen" formControlName="hoTen" >
+              <label for="floatingName">Họ và tên</label>
+            </div>
+          </div>
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingEmail" 
+            formControlName="email" name="email" >
+            <label for="floatingEmail">Your Email</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="tel" class="form-control" id="floatingDienThoai" 
+            formControlName="dienThoai" name="dienThoai" >
+            <label for="floatingPassword">Điện Thoại</label>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="form-floating">
+            <textarea class="form-control" formControlName="diaChi" name="diaChi"
+             id="floatingTextarea" style="height: 100px;" ></textarea>
+            <label for="floatingTextarea">Địa Chỉ</label>
+          </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-floating text-center">
+              <input type="text" hidden  
+              formControlName="hinhDaiDien" name="hinhDaiDien" value="">
+              <div><label for="floatingZip">Ảnh Đại Diện</label></div>
+              <div>
+                  <img src="/assets/img/image/users/user-default.png" alt="Profile" class="rounded-circle" style="max-width: 100px;">  
+              </div>          
+            </div>
+          </div>
+        <div class="col-md-3">
+          <div class="form-floating mb-3">
+            <select class="form-select" name="idPhongBan" 
+                formControlName="idPhongBan"  >
+                  <ng-container *ngFor="let phongBan of dsPhongBan;">
+                    <option [value]="phongBan.idPhongBan" >
+                      {{phongBan.tenPhongBan}}
+                    </option>
+                  </ng-container>
+                </select>
+            <label for="floatingSelect">Phòng Ban</label>
+          </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-floating mb-3">
+                <select class="form-select" name="idChucVu" 
+                formControlName="idChucVu" >
+                  <ng-container *ngFor="let chucVu of dsChucVu;">
+                    <option [value]="chucVu.idChucVu" >
+                      {{chucVu.tenChucVu}}
+                    </option>
+                  </ng-container>
+                </select>
+                <label for="floatingSelect">Chức vụ</label>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-floating mb-3">
+                <select class="form-select" name="isActive" formControlName="isActive" >
+                  <option [value]=1 >Đang kích hoạt</option>
+                  <option [value]=0 >Đã Vô Hiệu </option>
+                </select>
+                <label for="floatingSelect">Active</label>
+            </div>
+        </div>
+        
+        <div class="col-md-3">
+            <div class="text-center" style="padding-top: 10px;">
+            <button type="submit" class="btn btn-primary" (click)="submit()">Thêm User</button>
+          </div>
+        </div>
+      </form><!-- End floating Labels Form -->
+      <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "square-jelly-box" [fullScreen] = "true">
+        <!-- <p style="color: white" > Loading... </p> -->
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </ngx-spinner>
+    </div>
+  </div>

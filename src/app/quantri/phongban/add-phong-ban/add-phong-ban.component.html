@@ -1,0 +1,26 @@
+<div class="card" id="addChucVu">  
+    <div class="card-body">
+      <!-- Floating Labels Form -->
+      <form class="row g-3" [formGroup]="addPhongBan"> 
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingName" [readOnly]="false"
+            name="tenPhongBan" formControlName="tenPhongBan"  >
+            <label for="floatingName">Tên Phòng Ban</label> <!-- -->
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingName" 
+              name="maPhongBan" formControlName="maPhongBan" >
+              <label for="floatingName">Mã Phòng Ban</label>
+            </div>
+          </div> 
+          <div class="col-md-3">
+            <div class="text-center" style="padding-top: 10px;">
+            <button type="submit" class="btn btn-primary" (click)="submitPB()">Thêm Phòng Ban</button>
+          </div>
+        </div>
+      </form><!-- End floating Labels Form -->
+    </div>
+  </div>

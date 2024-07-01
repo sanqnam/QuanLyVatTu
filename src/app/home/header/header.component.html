@@ -1,0 +1,108 @@
+<header id="header" class="header fixed-top d-flex align-items-center">
+
+  <div class="d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="assets/img/logo2.png" alt="">
+      <!-- <span class="d-none d-lg-block">NiceAdmin</span> style="width: 93%!important;"   -->
+    </a>
+    <i class="ri-menu-line toggle-sidebar-btn" id="toggle-sidebar" (click)="toggleSidebar()"></i>
+  </div><!-- End Logo -->
+
+
+  <nav class="header-nav ms-auto">
+    <ul class="d-flex align-items-center">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<li class="nav-item dropdown">
+  <a class="nav-link nav-icon position-relative" href="#" data-bs-toggle="dropdown" (click)="LoadNoti(idUser)">
+    <i class="fas fa-bell"></i>
+    <span class="badge bg-primary badge-number">{{noti}}</span>
+  </a><!-- End Notification Icon -->
+
+  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications overflow-auto" style="max-height: 400px; width: 320px;">
+    <li class="dropdown-header d-flex justify-content-between align-items-center px-3 py-2">
+      <span>Thông báo</span>
+    </li>
+    <li><hr class="dropdown-divider m-0"></li>
+
+    <li class="notification-item d-flex align-items-center px-3 py-2" *ngFor="let noti of dsNoti" [ngClass]="{'read': noti.daDoc}" (click)="SetStatus(noti.idNoti)">
+      <a href="#" routerLink="{{noti.url}}" class="d-flex align-items-center text-decoration-none text-dark w-100">
+        <div class="notification-icon me-3">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="notification-content">
+          <h6 class="notification-title mb-1">{{ noti.mess }}</h6>
+          <p class="notification-info mb-0">Người tạo: {{ noti.nameGui }}</p>
+          <p class="notification-info mb-0">{{ noti.timeTao | date: 'dd/MM/yyyy HH:mm' }}</p>
+        </div>
+      </a>
+    </li>
+
+    <li class="dropdown-footer text-center py-2">
+      <a href="#" class="text-primary">View all notifications</a>
+    </li>
+  </ul>
+</li>
+      
+
+
+      <li class="nav-item dropdown pe-3">
+
+        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+          <img [src]='hinhDaiDien' alt="Profile" class="rounded-circle">
+          <span class="d-none d-md-block dropdown-toggle ps-2">{{hoTen}}</span>
+        </a><!-- End Profile Iamge Icon -->
+
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+          <li class="dropdown-header">
+            <h6>{{hoTen}}</h6>
+            <span>{{phongBan}}-{{chucVu}}</span>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="#" routerLink="profile">
+              <i class="bi bi-person"></i>
+              <span>Thông tin cá nhân</span>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <i class="bi bi-gear"></i>
+              <span>Account Settings</span>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+              <i class="bi bi-question-circle"></i>
+              <span>Need Help?</span>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="#" (click)="Logout()">
+              <i class="bi bi-box-arrow-right"></i>
+              <span>Sign Out</span>
+            </a>
+          </li>
+
+        </ul><!-- End Profile Dropdown Items -->
+      </li><!-- End Profile Nav -->
+
+    </ul>
+  </nav><!-- End Icons Navigation -->
+
+</header><!-- End Header -->

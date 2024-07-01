@@ -1,0 +1,99 @@
+<div class="card">
+    <div class="card-body">
+      <!-- Floating Labels Form -->
+      <form class="row g-3" [formGroup]="editUser">
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingName" [readOnly]="true"
+            name="username" formControlName="username"  [(ngModel)]="user.username">
+            <label for="floatingName">Username</label> <!-- -->
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingName" 
+              name="hoTen" formControlName="hoTen" [(ngModel)]="user.hoTen">
+              <label for="floatingName">Họ và tên</label>
+            </div>
+          </div>
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingEmail" 
+            formControlName="email" name="email" [(ngModel)]="user.email">
+            <label for="floatingEmail">Your Email</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="tel" class="form-control" id="floatingDienThoai" 
+            formControlName="dienThoai" name="dienThoai" [(ngModel)]="user.dienThoai">
+            <label for="floatingPassword">Điện Thoại</label>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="form-floating">
+            <textarea class="form-control" formControlName="diaChi" name="diaChi"
+             id="floatingTextarea" style="height: 100px;" [(ngModel)]="user.diaChi"></textarea>
+            <label for="floatingTextarea">Địa Chỉ</label>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-floating text-center">
+            <input type="text" hidden  
+            formControlName="hinhDaiDien" name="hinhDaiDien" [(ngModel)]="user.hinhDaiDien">
+            <div><label for="floatingZip">Ảnh Đại Diện</label></div>
+            <img [src]="user.hinhDaiDien" alt="Profile" class="rounded-circle" style="max-width: 100px;">            
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-floating mb-3 ">
+            <select class="form-select" name="idPhongBan" 
+                formControlName="idPhongBan" [(ngModel)]="user.idPhongBan" >
+                  <ng-container *ngFor="let phongBan of dsPhongBan;">
+                    <option [value]="phongBan.idPhongBan" [selected]="phongBan.idPhongBan == user.idPhongBan">
+                      {{phongBan.tenPhongBan}}
+                    </option>
+                  </ng-container>
+                </select>
+            <label for="floatingSelect">Phòng Ban</label>
+          </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-floating mb-3">
+                <select class="form-select" name="idChucVu" 
+                formControlName="idChucVu" [(ngModel)]="user.idChucVu" >
+                  <ng-container *ngFor="let chucVu of dsChucVu;">
+                    <option [value]="chucVu.idChucVu" [selected]="chucVu.idChucVu == user.idChucVu">
+                      {{chucVu.tenChucVu}}
+                    </option>
+                  </ng-container>
+                </select>
+                <label for="floatingSelect">Chức vụ</label>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-floating mb-3">
+                <select class="form-select" name="isActive" formControlName="isActive" [(ngModel)]="user.isActive">
+                  <option [value]=1 [selected]="user.isActive == 1">Đang kích hoạt</option>
+                  <option [value]=0 [selected]="user.isActive == 2">Đã Vô Hiệu </option>
+                </select>
+                <label for="floatingSelect">Active</label>
+            </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="text-center" style="padding-top: 10px;">
+            <button type="submit" class="btn btn-primary" (click)="submit()">Xác Nhận</button>
+            <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "square-jelly-box" [fullScreen] = "true">
+              <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+            </ngx-spinner>
+          </div>
+        </div>
+      </form><!-- End floating Labels Form -->
+
+    </div>
+  </div>

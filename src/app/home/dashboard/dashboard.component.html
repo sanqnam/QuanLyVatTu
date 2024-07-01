@@ -1,0 +1,318 @@
+<body class="">
+
+  <main id="main" class="main" style="margin-left:0px; margin-top: 0px;width: 100%;">
+    <div class="pagetitle">
+      <h1>Dashboard</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+
+      
+      <div class="row">
+        
+        <!-- Left side columns -->
+
+        <div class="col-12 row"  *ngIf="displayLanhDao">
+          <div class="col-xxl-6 col-md-6">
+            <div class="card info-card sales-card">
+              <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Filter</h6>
+                  </li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(1)">Tháng 1</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(2)">Tháng 2</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(3)">Tháng 3</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(4)">Tháng 4</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(5)">Tháng 5</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(6)">Tháng 6</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(7)">Tháng 7</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(8)">Tháng 8</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(9)">Tháng 9</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(10)">Tháng 10</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(11)">Tháng 11</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(12)">Tháng 12</a></li>
+                  <li><a class="dropdown-item" (click)="loadTotolPhieuVT()">Tổng</a></li>
+
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Phiếu vật tư </h5>
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-clipboard-plus"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>{{count}}</h6>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Revenue Card -->
+          <div class="col-xxl-6 col-md-6">
+            <div class="card info-card revenue-card">
+
+              <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Filter</h6>
+                  </li>
+
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(1)">Tháng 1</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(2)">Tháng 2</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(3)">Tháng 3</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(4)">Tháng 4</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(5)">Tháng 5</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(6)">Tháng 6</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(7)">Tháng 7</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(8)">Tháng 8</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(9)">Tháng 9</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(10)">Tháng 10</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(11)">Tháng 11</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(12)">Tháng 12</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSua()">Tổng</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Phiếu sửa </h5>
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bx bxs-wrench"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>{{countSua}}</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 row"  *ngIf="displayQuanTriTien">
+          <div class="col-xxl-4 col-md-6">
+            <div class="card info-card sales-card">
+              <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Filter</h6>
+                  </li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(1)">Tháng 1</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(2)">Tháng 2</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(3)">Tháng 3</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(4)">Tháng 4</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(5)">Tháng 5</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(6)">Tháng 6</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(7)">Tháng 7</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(8)">Tháng 8</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(9)">Tháng 9</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(10)">Tháng 10</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(11)">Tháng 11</a></li>
+                  <li><a class="dropdown-item" (click)="LoadPhieuVTByMonth(12)">Tháng 12</a></li>
+                  <li><a class="dropdown-item" (click)="loadTotolPhieuVT()">Tổng</a></li>
+
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Phiếu vật tư </h5>
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-clipboard-plus"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>{{count}}</h6>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Revenue Card -->
+          <div class="col-xxl-4 col-md-6">
+            <div class="card info-card revenue-card">
+
+              <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Filter</h6>
+                  </li>
+
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(1)">Tháng 1</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(2)">Tháng 2</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(3)">Tháng 3</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(4)">Tháng 4</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(5)">Tháng 5</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(6)">Tháng 6</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(7)">Tháng 7</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(8)">Tháng 8</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(9)">Tháng 9</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(10)">Tháng 10</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(11)">Tháng 11</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSuaThang(12)">Tháng 12</a></li>
+                  <li><a class="dropdown-item" (click)="loadPhieuSua()">Tổng</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Phiếu sửa </h5>
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bx bxs-wrench"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>{{countSua}}</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-12">
+            <div class="card info-card customers-card">
+              <div class="card-body">
+                <h5 class="card-title">Tổng tiền </h5>
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-currency-dollar"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>{{tongTien}}</h6>       
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+          <div style="height: 700px;" class="col-10">
+            <canvas id="myChartTien" ></canvas>
+          </div>
+          <div class="col-1"></div>
+          
+        </div>
+        <div class="col-12 row"  *ngIf="displayQuanTri">
+          <div class="col-xxl-6 col-md-6">
+            <div class="card info-card sales-card">
+              <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Phòng Ban</h6>
+                  </li>
+                  <li><a class="dropdown-item" (click)="loadThanhVienTheoPB('GD')">Giám Đốc </a></li>
+                  <li><a class="dropdown-item" (click)="loadThanhVienTheoPB('P.GD')">Phó Giám Đốc</a></li>
+                  <li><a class="dropdown-item" (click)="loadThanhVienTheoPB('HC&LÐ')">Hành Chính và Lao Động</a></li>
+                  <li><a class="dropdown-item" (click)="loadThanhVienTheoPB('KT&AT')">Kỹ thuật và An Toàn</a></li>
+                  <li><a class="dropdown-item" (click)="loadThanhVienTheoPB('TC&KT')">Tài Chính và Kế Toán</a></li>
+                  <li><a class="dropdown-item" (click)="loadThanhVienTheoPB('KH&VT')">Kế hoạch và Vật tư</a></li>
+                  <li><a class="dropdown-item" (click)="loadThanhVienTheoPB('Px.VH')">Phân Xưởng Vận Hành</a></li>
+                  <li><a class="dropdown-item" (click)="loadThanhVien()">Tổng</a></li>
+
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Thành Viên</h5>
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-person"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>{{countNV}}</h6>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- End Sales Card -->
+
+          <!-- Revenue Card -->
+          <div class="col-xxl-6 col-md-6">
+            <div class="card info-card revenue-card">
+
+              <div class="card-body">
+                <h5 class="card-title">Chức Vụ <span>| Tổng</span></h5>
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bx bx-sitemap"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>{{countCV}}</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2"></div><!-- End Revenue Card -->
+          <div style="height: 700px;" class="col-8">
+            <canvas id="myChart" ></canvas>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <div class="col-12 row"  *ngIf="displayThuKho">
+          <div class="col-xxl-6 col-md-6">
+            <div class="card info-card sales-card">
+              <div class="card-body">
+                <h5 class="card-title">Vật tư trong công ty <span>| Tổng</span></h5>
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-person"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>{{countVT}}</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Sales Card -->
+
+          <!-- Revenue Card -->
+          <div class="col-xxl-6 col-md-6">
+            <div class="card info-card revenue-card">
+
+              <div class="card-body">
+                <h5 class="card-title">Vật tư đang sử dụng <span>| Tổng</span></h5>
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bx bx-sitemap"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>{{countVTSD}}</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2"></div><!-- End Revenue Card -->
+          <div style="height: 700px;" class="col-8">
+            <canvas id="myChartThuKho" ></canvas>
+          </div>
+          <div class="col-2"></div>
+        </div>
+
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+
+
+  <!-- Template Main JS File -->
+
+</body>

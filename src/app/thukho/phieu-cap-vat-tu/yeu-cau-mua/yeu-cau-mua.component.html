@@ -1,0 +1,32 @@
+<form class="row g-3" [formGroup]="addMua">
+  <div *ngIf="vtMua">Số lượng đang chờ mua: {{vtMua.soLuongChoMua}}</div>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col-1"class="col">Yêu cầu</th>
+        <th scope="col-2"class="col">Trong kho</th>
+        <th scope="col-2"class="col">Cần mua</th>
+        <th scope="col-2"class="col">Mua Thêm</th>
+        <th scope="col-2"class="col">Ghi chú thủ kho</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="vtMua">
+        <td>{{vtMua.soLuongDeNghi}}</td>
+        <td>{{vtMua.soLuongTonKho}}</td>
+        <td>{{vtMua.soLuongCanMua}}</td>
+        <td>
+            <input type="text" class="form-control" id="floatingName" name="maVatTu"
+            formControlName="soLuongMuaThem">
+        </td>
+        <td>
+            <input type="text" class="form-control" id="floatingName" name="maVatTu"
+            formControlName="giChuMuaThem">
+        </td>
+
+        <!-- <td><input type="number" [value]="" id="vatTu" (focusout)="onInput()"></td> -->
+      </tr>
+    </tbody>
+</table>
+</form>
+<button (click)="Submit()" class="btn btn-outline-success">submit</button>

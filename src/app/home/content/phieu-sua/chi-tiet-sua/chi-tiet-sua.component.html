@@ -1,0 +1,34 @@
+<div class="tab-pane fade show active profile-overview" id="profile-overview">
+    
+
+    <div class="card">
+      <div class="card-body">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th class="">#</th>
+                <th scope="col-1" class="col">Tên vật tư</th>
+                <th scope="col-3"class="col">Mã vật tư</th>
+                <th scope="col-3"class="col">Người sửa</th>
+                <th scope="col-1"class="col">Tình trạng</th>
+                <th scope="col-1"class="col">Hình</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let ct of chiTietPhieu; 
+                  let i = index;">
+                <td>{{i+1}}</td>
+                <td>{{ct.tenVatTu}}</td>
+                <td>{{ct.maVatTu}}</td>
+                <td>{{ct.nguoiThuHien == null ? "Đang xử lý" : ct.nguoiThuHien}}</td>
+                <td>{{ct.moTaTinhTrang}}</td>
+                <td></td>
+              </tr> 
+            </tbody>
+          </table>
+        
+      </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,169 @@
+<div class="pagetitle">
+  <div class="col-lg-12" style="padding: 10px 0 0px 0; border-bottom: 2px solid blue;"> 
+    <div class="row">
+      <div class="col-lg-4"> 
+        <div class="row">
+          <div class="col-lg-6" style="max-width: 60%;float: left;">
+            <h1>{{title}}</h1>
+            <nav>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Users</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-lg-6" style="max-width: 40%;"> 
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AddUser" >
+              <i class="bi bi-person-plus-fill" ></i> | Add User</button>
+          </div>
+        </div>
+      </div>  
+      <div class="col-lg-5">          
+        <form [formGroup]="filterForm"> 
+          <div class="row">
+            <div class="col-2" style="float: left;">  
+              <select class="form-select"  name="size" 
+              formControlName="size" (change)="filterSelect()" [(ngModel)]="tableSize">
+                <ng-container *ngFor="let size of tableSizes">
+                  <option [selected]="size == tableSize"  [value]="size">{{size}}</option>
+                </ng-container>
+              </select> 
+            </div>
+            <div class="col-5" style="float: left; padding-right: 15px;">
+              <select class="form-select" name="idPhongBan" 
+              formControlName="idPhongBan" (change)="filterSelect()" [(ngModel)]="phongBan">
+                <option [selected]="0 == phongBan" [value]="0" >Chọn phòng ban</option>
+                <ng-container *ngFor="let pb of dsPhongBan;">
+                  <option [selected]="pb.idPhongBan == phongBan" [value]="pb.idPhongBan">
+                    {{pb.tenPhongBan}}
+                  </option>
+                </ng-container>                    
+              </select> 
+            </div>
+            <div class="col-5" style="float: left; ">  
+              <select class="form-select" name="idChucVu" 
+                formControlName="idChucVu" (change)="filterSelect()" [(ngModel)]="chucVu">
+                <option [selected]="0 == chucVu" [value]="0" >Chọn chức vụ</option>
+                <ng-container *ngFor="let cv of dsChucVu;">
+                  <option [selected]="cv.idChucVu == chucVu" [value]="cv.idChucVu">
+                    {{cv.tenChucVu}}
+                  </option>
+                </ng-container>                    
+              </select> 
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-3"> 
+        <div class="{{searchClass}}">
+            <input type="text" class="form-control " name="search" 
+              [(ngModel)]="search"  placeholder="Search" title="Enter search keyword" 
+              (ngModelChange)="Search()">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div><!-- End Page Title -->
+  <section class="section">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body">
+            <table class="table datatable table-hover">
+              <thead>
+                <tr style="line-height: 36px;">
+                  <th scope="col">#</th>
+                  <th scope="col">Users</th>
+                  <th scope="col">Họ Tên</th>
+                  <th scope="col">Chức Vụ</th>
+                  <th scope="col">Phòng Ban</th>
+                  <th scope="col">Active</th>
+                  <th scope="col">Quản Trị </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let user of DsUser
+                | paginate:{
+                  itemsPerPage: tableSize,
+                  currentPage: page,
+                  totalItems: count
+                  }; let i = index " style="line-height: 29px;"> <!-- | filter:search-->
+                  <th scope="row">{{i+1}}</th>
+                  <td>{{user.username}}</td>
+                  <td>{{user.hoTen}}</td>
+                  <td>{{user.tenChucVu}}</td>
+                  <td>{{user.maPhongBan}}</td>
+                  <td *ngIf="user.isActive==1; else activeFalse" 
+                    (click)="activeUser(user.idUser, user.username,user.isActive)">
+                    <a href="javascript:void(0);">
+                      <i class="ri-toggle-fill" style="font-size: 30px; color: blue;"></i>
+                    </a>
+                  </td>
+                  <ng-template #activeFalse>
+                    <td (click)="activeUser(user.idUser, user.username,user.isActive)">
+                      <a href="javascript:void(0);">
+                        <i class="ri-toggle-line" style="font-size: 30px; color: red;" ></i>
+                      </a>
+                    </td>
+                  </ng-template>
+                  <td>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ExtralargeModal" (click)="chiTietUser(user)">
+                      <i class="bx bx-edit" ></i></button> | 
+                    <button class="btn btn-warning">
+                      <i class="bx bx-rotate-left" (click)="resetPass(user.idUser,user.username)"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="row" *ngIf="DsUser!=null"> 
+
+                    <pagination-controls class="pagination justify-content-center" style="padding-top: 14px;"
+                      previousLabel="Prev"
+                      nextLabel="Next"
+                      (pageChange)="onTableDataChange($event)">
+                    </pagination-controls>
+
+            </div>
+            <!-- End Table with stripped rows -->
+            <div class="modal fade" id="ExtralargeModal" tabindex="-1">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Chỉnh sửa tài khoản</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"  
+                    aria-label="Close" (click)="ngOnInit()"></button>
+                  </div>
+                  <div class="modal-body">
+                    <app-edit [chiTietUser]="user" [PhongBan]="dsPhongBan" [ChucVu]="dsChucVu"></app-edit>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Extra Large Modal-->
+            <div class="modal fade" id="AddUser" tabindex="-1">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Thêm Tài Khoản</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"  
+                    aria-label="Close" (click)="ngOnInit()"></button>
+                  </div>
+                  <div class="modal-body">
+                    <app-add [PhongBan]="dsPhongBan" [ChucVu]="dsChucVu"></app-add>
+                  </div>
+                </div>
+              </div>
+            </div><!-- Thêm Mới-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "square-jelly-box" [fullScreen] = "true">
+      <!-- <p style="color: white" > Loading... </p> -->
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </ngx-spinner>
+  </section>

@@ -1,0 +1,121 @@
+<div class="tab-pane fade show active profile-overview" id="profile-overview">
+    
+
+      <div class="card">
+        <div class="card-body">
+          <table class="table table-hover" style="padding-bottom: 20px;">
+            <thead>
+              <tr>
+                <th scope="col">Tên phòng ban</th>
+                <th scope="col">Người yêu cầu</th>
+                <th scope="col">Lý do tạo phiếu</th>
+                <th scope="col">Thời gian tạo phiếu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngIf="phieu">
+                <td>{{phieu.tenPhongBan}}</td>
+                <td>{{phieu.hoVaTen}}</td>
+                <td>{{phieu.lyDoLapPhieu}}</td>
+                <td>{{phieu.timeTaoPhieu | date: 'dd/MM/yyyy HH:mm'}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <ng-template [ngIf]="display == 1" | [ngIfElse]="else2">
+            <table class="table table-info">
+              <thead>
+                <tr>
+                  <th class="col">#</th>
+                  <th scope="col" class="col-3">Tên vật tư</th>
+                  <th scope="col" class="col-2">Mã vật tư</th>
+                  <th scope="col" class="col-2">Đơn vị tính</th>
+                  <th scope="col" class="col-1">SL</th>
+                  <th scope="col" class="col-4">Ghi chú duyệt</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let ct of chiTietPhieu; 
+                    let i = index;">
+                  <td>{{i+1}}</td>
+                  <td>{{ct.tenVatTu}}</td>
+                  <td>{{ct.maVatTu}}</td>
+                  <td>{{ct.donViTinhDeNghi}}</td>
+                  <td>{{ct.soLuongDeNghi}}</td>
+                  <td>{{ct.ghiChuDuyetPhieu}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </ng-template>
+          <ng-template #else2>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th class="">#</th>
+                  <th scope="col-1" class="col">Tên vật tư</th>
+                  <th scope="col-3"class="col">Mã vật tư</th>
+                  <th scope="col-1"class="col">Đơn vị tính</th>
+                  <th scope="col-1"class="col">Số lượng</th>
+                  <th scope="col-2"class="col">Số lượng thay đổi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let ct of chiTietPhieu; 
+                    let i = index;">
+                  <td>{{i+1}}</td>
+                  <td>{{ct.tenVatTu}}</td>
+                  <td>{{ct.maVatTu}}</td>
+                  <td>{{ct.donViTinhDeNghi}}</td>
+                  <td>{{ct.soLuongDeNghi}}</td>
+                  <td><input class="form-control" type="number" [value]="" id="vatTu{{i}}" (focusout)="onInput(i)"></td>
+                </tr>
+              </tbody>
+            </table>
+          </ng-template>
+          <ng-template [ngIf]="khongDuyet==2 && this.isTra == true" | [ngIfElse]="elsee">
+            <div class="row" style="padding-bottom: 10px;">
+              <div class="col-lg-1">
+                <button class="btn btn-outline-success" (click)=" this.isTra=false" >Back</button>
+              </div>
+              <div class="col-lg-2">
+                <input type="password" id="maBiMat" class="form-control "(change)="inputMa()" placeholder="Nhập mã bí mật" >
+                <small class="text-danger" *ngIf="displayMa">Bắt buộc phải nhập mã</small>
+              </div>            
+              <div class="col-lg-7">
+                <input type="text" [value]="" id="lyDo" (focusout)="InputLyDo()" class="form-control" placeholder="Nhập lý do không duyệt">
+                <small class="text-danger" *ngIf="isLydo">Bắt buộc phải nhập lý do để trả</small>
+              </div>              
+              <div class="col-lg-2">
+                <button type="button" class="btn btn-outline-success" (click)=" Send()">Xác nhận</button>
+              </div>  
+            </div>
+          </ng-template>
+          <ng-template #elsee>  
+          </ng-template>
+          <div class="row g-3" *ngIf="this.isTra == false">
+            <div class="col-lg-2">
+              <button type="button" class="btn btn-outline-success" (click)="isStatus()" >Duyệt
+                Phiếu</button>
+            </div>            
+            <div class="col-lg-8 row inputMa" >    
+              <div class="col-9 ">
+                <input type="password" id="maBiMat" class="form-control "(change)="inputMa()" placeholder="Nhập mã bí mật" >
+                <small class="text-danger" *ngIf="displayMa">Bắt buộc phải nhập mã để duyệt</small>
+              </div>            
+            </div>
+            <div class="col-lg-2">
+              <button type="button" class="btn btn-outline-danger" (click)="setup()">Không duyệt</button>
+            </div>  
+          </div>
+        </div>
+        
+      </div>
+
+
+  </div>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="square-jelly-box" [fullScreen]="true">
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</ngx-spinner>

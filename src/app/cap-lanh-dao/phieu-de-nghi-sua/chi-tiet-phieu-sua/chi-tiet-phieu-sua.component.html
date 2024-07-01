@@ -1,0 +1,85 @@
+<div class="tab-pane fade show active profile-overview" id="profile-overview">
+    
+
+    <div class="card">
+      <div class="card-body">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th class="">#</th>
+                <th scope="col-1" class="col">Tên vật tư</th>
+                <th scope="col-3"class="col">Mã vật tư</th>
+                <th scope="col-1"class="col">Tình trạng</th>
+                <th scope="col-1"class="col">Hình</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let ct of chiTietPhieu; 
+                  let i = index;">
+                <td>{{i+1}}</td>
+                <td>{{ct.tenVatTu}}</td>
+                <td>{{ct.maVatTu}}</td>
+                <td>{{ct.moTaTinhTrang}}</td>
+                <td><button  class="btn btn-primary" (click)="Hinh(ct);action()">
+                <i  class="bi bi-card-image"></i>
+                <ng-template *ngIf="isShowimg">
+                  <app-view-hinh-anh [hinh]="hinhArr">
+                  </app-view-hinh-anh>
+                </ng-template>
+              </button></td>
+              </tr> 
+            </tbody>
+          </table>
+          <!-- sự click là true thì mới cho bật hình ảnh lên  -->
+        
+
+        <ng-template [ngIf]="khongDuyet==2" | [ngIfElse]="elsee">
+          <div class="row" style="padding-bottom: 10px;">
+            <div class="col-lg-3">
+              <strong>
+                Nhập lý do không duyệt:
+              </strong>
+            </div>
+            <div class="col-lg-7">
+              <input type="text" [value]="" id="lyDo" (focusout)="InputLyDo()" class="form-control">
+            </div>
+            <div class="col-lg-2">
+              <button type="button" class="btn btn-outline-success" (click)=" Send()">Xác nhận</button>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template #elsee>
+        </ng-template>
+        <div class="row g-3">
+          <div class="col-lg-2">
+            <button type="button" class="btn btn-outline-success" (click)="isStatus()" (click)="Send()" >Duyệt Phiếu</button>
+          </div>
+          <div class="col-lg-8 row inputMa" >
+            <div class="col-3">
+             <p> Nhập mã để duyệt</p>
+            </div>
+            <div class="col-9 " >
+              <input type="password" id="maBiMat" class="form-control "(change)="inputMa()" >
+              <small class="text-danger" *ngIf="displayMa">Bắt buộc phải nhập mã để duyệt</small>
+            </div>            
+            
+          </div>
+          <div class="col-lg-2">
+            <button type="button" class="btn btn-outline-danger" (click)="khongDuyet=2">Không duyệt</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="square-jelly-box" [fullScreen]="true">
+<div class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+</ngx-spinner>
+

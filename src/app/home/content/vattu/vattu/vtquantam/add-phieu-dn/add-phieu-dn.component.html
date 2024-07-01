@@ -1,0 +1,90 @@
+
+<section class="section">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body">
+            <form class="row g-3" [formGroup]="PhieuVT" (submit)="send()">
+              <div class="col-lg-6" style="padding-top: 15px;"> 
+                <input type="text" class="form-control " formControlName="LyDoLapPhieu" 
+                  placeholder="Lý do tạo phiếu" title="Nhập Lý Do Đề nghị Vật Tư" (click)="adDsVatTu()">    
+                  <small class="text-danger" *ngIf="isLyDo">Nhập lý do để tạo</small>              
+              </div>
+              <div class="col-md-3">
+                <div class="form-floating mb-3 ">
+                  <select class="form-select" name="idPhongBan" 
+                      formControlName="idThuTruong" >
+                        <ng-container *ngFor="let phongBan of dsPhongBan;">
+                          <option [value]="phongBan.idUser">
+                            {{phongBan.maChucVu}} - {{phongBan.hoTen}}
+                          </option>
+                        </ng-container>
+                      </select>
+                  <label for="floatingSelect">Phòng Ban Ký</label>
+                  <small class="text-danger" *ngIf="isTP">Trường  bắt buộc</small> 
+                </div>                    
+              </div>
+              <div class="col-md-3">
+                <div class="form-floating mb-3 ">
+                  <select class="form-select" name="idPhongBan" 
+                      formControlName="idLanhDao" >
+                        <ng-container>
+                          <option [value]="2">
+                            GĐ - Đỗ Thanh Tuyền
+                          </option>
+                          <option [value]="2004">
+                            PGĐ - Nguyễn Tường Dũng
+                          </option>
+                        </ng-container>
+                      </select>
+                  <label for="floatingSelect">Lãnh Đạo Ký</label>
+                  <small class="text-danger" *ngIf="isLD"> Trường bắt buộc</small>  
+                </div>
+              </div>
+              <table class="table datatable table-hover col-lg-12">
+                <thead>
+                  <tr style="line-height: 36px;">
+                    <th scope="col">#</th>
+                    <th scope="col">Tên Vật Tư</th>
+                    <th scope="col">Mã Vật Tư</th>
+                    <th scope="col">Đơn Vị Tính</th>
+                    <th scope="col" style="width: 150px;">Số Lượng</th>
+                    <th scope="col">Ghi Chú</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr  *ngFor="let cont of dsPhieu;  
+                    let i = index;" style="line-height: 29px;"> 
+                    <ng-container [formGroupName]="i">
+                      <th scope="row" >{{i+1}}</th> 
+                      <td>
+                        {{cont.tenVatTu}}
+                      </td>
+                      <td>
+                        {{cont.maVatTu}}
+                      </td>
+                      <td style="text-align: center;">
+                        {{cont.donViTinh}}
+                      </td>
+                      <td><input type="number" id="soLuong{{i}}" [value]=""  (change)="InputSoluong(i)" class="form-control"></td>
+                      <td><input type="text" id="ghiChu{{i}}" [value]=""(change)="InputGhiChu(i)" class="form-control"></td>
+                    </ng-container>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- End Table with stripped rows -->   
+              <button class="btn btn-primary" >Tạo Phiếu</button>           
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ngx-spinner bdColor = "rgba(0, 0, 0, 0.2)" size = "medium" color = "#fff" type = "square-jelly-box" [fullScreen] = "false">
+      <!-- <p style="color: white" > Loading... </p> -->
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </ngx-spinner>
+  </section>

@@ -1,0 +1,108 @@
+<div class="row" style="border-bottom: 2px solid blue; margin-bottom: 20px;">
+  <div class="pagetitle col-lg-3 col-md-3">
+    <h1>Phiếu Chờ Duyệt</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">Phiếu</li>
+        <li class="breadcrumb-item">Phiếu vật tư</li>
+        <li class="breadcrumb-item active">Phiếu chờ duyệt</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="col-lg-9 col-md-9">
+    <form [formGroup]="filterForm">
+      <div class="row">
+        <div class="col-2" style="float: left;">
+          <select class="form-select" name="size" formControlName="size" (change)="filterSelect()"
+            [(ngModel)]="tableSize">
+            <ng-container *ngFor="let size of tableSizes">
+              <option [selected]="size == tableSize" [value]="size">{{size}}</option>
+            </ng-container>
+          </select>
+        </div>
+        <div class="col-5" style="float: left; padding-right: 15px;">
+          <select class="form-select" name="sortOrder" formControlName="sortOrder" (change)="filterSelect()"
+            [(ngModel)]="sortOrder">
+            <option [value]="1"> Sắp xếp mới nhất</option>
+            <ng-container>
+              <option [value]="2">
+                Sắp xếp cũ nhất
+              </option>
+            </ng-container>
+          </select>
+        </div>
+        <div class="col-5" style="float: left; padding-right: 15px;">
+          <select class="form-select" name="choose" formControlName="choose" (change)="filterSelect()"
+            [(ngModel)]="choose">
+            <option [value]="1"> Chờ duyệt</option>
+            <ng-container>
+              <option [value]="2">
+                Đang xử lý
+              </option>
+            </ng-container>
+          </select>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<table class="table table-hover">
+  <thead>
+    <tr style="line-height: 36px;">
+      <th scope="col">#</th>
+      <th scope="col">Thủ trưởng duyệt</th>
+      <th scope="col">Lãnh đạo duyệt</th>
+      <th scope="col">Lý do tạo phiếu</th>
+      <th scope="col">Thời gian tạo phiếu</th>
+
+      <th scope="col">Tình trạng phiếu</th>
+      <th scope="col">Tùy chọn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style=" line-height: 32px;" *ngFor="let dsphieu of dsPhieu
+            | paginate:{
+              itemsPerPage: tableSize,
+              currentPage: page,
+              totalItems: counts
+              }; let i = index ">
+      <th scope="row">{{i+1}}</th>
+      <td>{{dsphieu.tenThuTruong}}</td>
+      <td>{{dsphieu.tenLanhDao}}</td>
+      <td>{{dsphieu.lyDoLapPhieu}}</td>
+      <td>{{dsphieu.timeTaoPhieu| date: 'dd/MM/yyyy HH:mm'}}</td>
+
+      <td>{{dsphieu.tinhTrangPhieu}}</td>
+      <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ExtralargeModal"
+          (click)="chiTiet(dsphieu)">
+          <i class="bx bx-edit"></i></button></td>
+    </tr>
+  </tbody>
+</table>
+
+  <div class="row " *ngIf="dsPhieu!=null">
+    <pagination-controls class="pagination justify-content-center" style="padding-top: 14px;" previousLabel="Prev"
+      nextLabel="Next" (pageChange)="onTableDataChange($event)">
+    </pagination-controls>
+  </div>
+
+
+
+<!-- show chi tiêt phiếu -->
+<div class="modal fade " id="ExtralargeModal" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Chi tiết phiếu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-chitiet [phieu]="phieu" [chiTiet]="chiTietPhieu">
+
+        </app-chitiet>
+
+      </div>
+    </div>
+  </div>
+</div>

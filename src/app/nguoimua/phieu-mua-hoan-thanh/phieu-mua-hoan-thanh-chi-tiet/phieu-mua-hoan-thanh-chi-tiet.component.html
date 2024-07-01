@@ -1,0 +1,29 @@
+<div class="card" >
+    <div class="card-body">
+          <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th class="col">#</th>
+                  <th scope="col" class="col-3">Tên vật tư</th>
+                  <th scope="col" class="col-2">Đơn vị tính</th>
+                  <th scope="col" class="col-2">Đon giá</th>
+                  <th scope="col" class="col-1">Số lượng</th>
+                  <th scope="col" class="col-3">Đơn cung cấp</th>
+                  <th scope="col" class="col-1">VAT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let ct of dsChiTiet; 
+                    let i = index;">
+                  <td>{{i+1}}</td>
+                  <td>{{ct.tenVatTu}}</td>
+                  <td>{{ct.donViTinh}}</td>   
+                  <td>{{ct.donGia}}</td>  
+                  <td>{{ct.soluong}}</td>  
+                  <td>{{ct.donViCungCap}}</td>  
+                  <td>{{ct.vat}}</td>               
+                  
+                </tr>
+              </tbody>
+            </table>      
+    </div>

@@ -1,0 +1,93 @@
+<div class=" row" style="border-bottom: 2px solid blue; margin-bottom: 20px;">
+  <div class="pagetitle col-lg-4 col-md-4">
+    <h1>Danh Sách Chức Vụ</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">Quản trị</li>
+        <li class="breadcrumb-item active">Chức vụ</li>
+      </ol>
+    </nav>
+  </div>
+  <div class=" col-lg-3 col-md-3">
+    <div class="datatable-dropdown">
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AddChucVu" >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-2 h-2" style="width: 25px; height: 25px;">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg> | Thêm Chức Vụ</button>
+    </div>
+  </div>
+    <div class="col-lg-2 col-md-2">
+      <input type="text" class="form-control " name="search" 
+        placeholder="Search" title="Enter search keyword" 
+        [(ngModel)]="search" (ngModelChange)="Search()">
+  </div>
+</div>
+
+<section class="section">
+  <div class="row">
+    <div class="col-lg-12">
+
+      <div class="card">
+        <div class="card-body">
+            <div class="datatable-container">
+              <table class="table datatable datatable-table table-hover">
+                <thead>
+                  <tr>
+                    <th data-sortable="true" style="width: 5.696636925188744%;"><a href="#"
+                        class="">#</a></th>
+                    <th data-sortable="true" style="width: 28.002745367192862%;"><a href="#"
+                        class="">Tên chức vụ</a></th>
+                    <th data-sortable="true" style="width: 37.74879890185313%;"><a href="#"
+                        class="">Mã chức vụ</a></th>
+                        <th data-sortable="true" style="width: 28.002745367192862%;"><a href="#"
+                          class="">Tùy chọn</a></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let chucvu of DsChucVu, let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{chucvu.tenChucVu}}</td>
+                    <td>{{chucvu.maChucVu}}</td>
+                    <td>  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ExtralargeModal" (click)="chiTietChucVu(chucvu)">
+                      <i class="bx bx-edit" ></i></button> </td>
+      
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        
+        </div>
+      </div>
+      <div class="modal fade" id="addChucVu" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Thêm Tài Khoản</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"  
+              aria-label="Close" (click)="ngOnInit()"></button>
+            </div>
+            <div class="modal-body">
+             <app-ad-chuc-vu></app-ad-chuc-vu>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="ExtralargeModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Chỉnh sửa chức vụ</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"  
+              aria-label="Close" (click)="ngOnInit()"></button>
+            </div>
+            <div class="modal-body">
+              <app-editchucvu [chiTietChucVu]="chucVu"></app-editchucvu>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

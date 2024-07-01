@@ -1,0 +1,9 @@
+<div class="gallery-container">
+    <div class="image-wrapper ">
+      <img   [src]="dsImg.length > 0 ? dsImg[currentIndex].url : url" class="image-item size-img">      
+    </div>
+  <div class="navigation-buttons" *ngIf="dsImg.length > 0">
+    <button class="btn btn-outline-success"(click)="prevImage()" [disabled]="currentIndex === 0">Prev</button>
+    <button class="btn btn-outline-success" (click)="nextImage()" [disabled]="currentIndex === dsImg.length - 1">Next</button>
+  </div>
+</div> 

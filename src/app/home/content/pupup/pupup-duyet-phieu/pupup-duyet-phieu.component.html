@@ -1,0 +1,69 @@
+<div class=" row inputMa">
+    <div class="col-12 row ">
+        <div class="col-4 ">
+            <input type="password" #maBiMatInput class="form-control " (change)="inputMa()" placeholder="Nhập mã">
+            <small class="text-danger" *ngIf="isDisplayMa">Bắt buộc phải nhập mã để duyệt</small>
+           <div class="inputMa">
+            <ng-template [ngIf]="!isDuyet">
+                <div>
+                    <button class="btn btn-outline-success" (click)="Back()" >
+                        Back
+                    </button>
+                </div>
+            </ng-template>
+           </div>
+        </div>
+        <div class="col-8">
+            <ng-template *ngIf="isDuyet ; else khac" [ngIf]="isHien">
+                <div  style="padding-bottom: 10px;">
+                    <div >
+                        <input type="text" [value]="" id="note" (change)="InputNote()" class="form-control" placeholder="note">
+                    </div>     
+                </div>
+            </ng-template>
+            <ng-template #khac>
+                <div class="row" style="padding-bottom: 10px;">
+                    <div >
+                        <input type="text" [value]="" id="lyDo" (change)="InputLyDo()" class="form-control" placeholder="lý do">
+                    </div>        
+
+                </div>
+                <div class="row">
+                    <div class=" col-9">
+
+                    </div>
+                    <div class="col-3" style="padding-top: 10px;">
+                        <button type="button" class="btn btn-outline-success" (click)="Send()">Xác nhận</button>
+                    </div>
+                </div>
+            </ng-template>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <ng-template [ngIf]="isDuyet">
+            <div class="col-2 ">
+                <button class=" btn btn-outline-success" (click)="isDuyet = true ; Send()">
+                    Duyệt
+                </button>
+            </div>
+            <div class=" col-7">
+                
+            </div>
+            <div class="col-3 " >
+                <button class=" btn btn-outline-danger" (click)="isDuyet = false; isHien = false" >
+                    Không duyệt
+                </button>
+            </div>
+        </ng-template>
+        <ng-template [ngIf]="!isDuyet">
+            <div class="col-3">
+            </div>
+        </ng-template>
+    </div>
+    
+</div>
+
+
+
